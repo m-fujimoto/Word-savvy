@@ -9,9 +9,6 @@ MainWindow::MainWindow(QWidget *parent) :
     setWindowTitle(appTitle);
     connectDatabase();
     ui->tabWidget->setCurrentIndex(0);
-    ui->English_tableWidget->verticalHeader()->hide();
-    ui->Japanese_tableWidget->verticalHeader()->hide();
-
     selectData();
 }
 
@@ -482,6 +479,7 @@ void MainWindow::clear_English_form()
     ui->English_meaning_lineEdit->setText("");
     ui->English_textEdit->setText("");
     ui->English_checkBox->setChecked(false);
+    ui->keyword_lineEdit->setText("");
 }
 
 void MainWindow::on_English_tableWidget_cellDoubleClicked(int row)
