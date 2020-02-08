@@ -11,10 +11,6 @@ The Word-savvy Team is pleased to announce the availability of Word-savvy 1.1.0.
 
 * Windows10, FreeBSD-12.1-RELEASE
 
-## FAQ
-
-* Remove all whitespace in front of data to display data properly.
-
 ## Version
 
 * Version 1.1.0	(2020/02/14)
