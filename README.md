@@ -13,7 +13,7 @@ The Word-savvy Team is pleased to announce the availability of Word-savvy 1.1.0.
 
 ## FAQ
 
-* Remove any space in front of data to display data properly.
+* Remove all whitespace in front of data to display data properly.
 
 ## Version
 
