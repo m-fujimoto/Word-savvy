@@ -31,7 +31,7 @@
     <item>
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="English_tab">
        <attribute name="title">
@@ -120,7 +120,7 @@
             <item>
              <widget class="QLabel" name="label_4">
               <property name="text">
-               <string>Number : </string>
+               <string>NUMBER :</string>
               </property>
              </widget>
             </item>
@@ -134,7 +134,7 @@
             <item>
              <widget class="QLabel" name="label">
               <property name="text">
-               <string>Word : </string>
+               <string>WORD : </string>
               </property>
              </widget>
             </item>
@@ -144,7 +144,7 @@
             <item>
              <widget class="QLabel" name="label_2">
               <property name="text">
-               <string>Pronounciation  : </string>
+               <string>PRONUNCIATION : </string>
               </property>
              </widget>
             </item>
@@ -154,7 +154,7 @@
             <item>
              <widget class="QLabel" name="label_11">
               <property name="text">
-               <string>Star: </string>
+               <string>STAR : </string>
               </property>
              </widget>
             </item>
@@ -167,27 +167,27 @@
               </item>
               <item>
                <property name="text">
-                <string>*</string>
+                <string>★</string>
                </property>
               </item>
               <item>
                <property name="text">
-                <string>**</string>
+                <string>★★</string>
                </property>
               </item>
               <item>
                <property name="text">
-                <string>***</string>
+                <string>★★★</string>
                </property>
               </item>
               <item>
                <property name="text">
-                <string>****</string>
+                <string>★★★★</string>
                </property>
               </item>
               <item>
                <property name="text">
-                <string>*****</string>
+                <string>★★★★★</string>
                </property>
               </item>
              </widget>
@@ -199,7 +199,7 @@
             <item>
              <widget class="QLabel" name="label_3">
               <property name="text">
-               <string>Meaning : </string>
+               <string>MEANING : </string>
               </property>
              </widget>
             </item>
@@ -213,7 +213,7 @@
             <item>
              <widget class="QLabel" name="label_5">
               <property name="text">
-               <string>Memo : </string>
+               <string>MEMO : </string>
               </property>
              </widget>
             </item>
@@ -287,7 +287,7 @@
             <item>
              <widget class="QCheckBox" name="English_checkBox">
               <property name="text">
-               <string>Tick</string>
+               <string>Tick this box to edit or delete a data</string>
               </property>
              </widget>
             </item>
@@ -296,32 +296,6 @@
           <item>
            <layout class="QHBoxLayout" name="horizontalLayout_12">
             <item>
-             <widget class="QPushButton" name="memo_searchpushButton">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="text">
-               <string>Memo Search</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QPushButton" name="word_search_pushButton">
-              <property name="sizePolicy">
-               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-                <horstretch>0</horstretch>
-                <verstretch>0</verstretch>
-               </sizepolicy>
-              </property>
-              <property name="text">
-               <string>Word Search</string>
-              </property>
-             </widget>
-            </item>
-            <item>
              <widget class="QLabel" name="label_13">
               <property name="text">
                <string>Keyword : </string>
@@ -329,7 +303,7 @@
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="keyword_lineEdit">
+             <widget class="QLineEdit" name="English_keyword_lineEdit">
               <property name="sizePolicy">
                <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                 <horstretch>0</horstretch>
@@ -341,6 +315,39 @@
                 <width>200</width>
                 <height>0</height>
                </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="search_English_keyword_by_word_pushButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>Search Keyword by WORD</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="search_English_keyword_by_pronunciation_pushButton">
+              <property name="text">
+               <string>Search Keyword by PRONUNCIATION</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="search_English_keyword_by_memo_pushButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>Search Keyword  by MEMO</string>
               </property>
              </widget>
             </item>
@@ -422,7 +429,7 @@
             <item>
              <widget class="QLabel" name="label_6">
               <property name="text">
-               <string>Number : </string>
+               <string>NUMBER : </string>
               </property>
              </widget>
             </item>
@@ -436,7 +443,7 @@
             <item>
              <widget class="QLabel" name="label_7">
               <property name="text">
-               <string>Word : </string>
+               <string>WORD : </string>
               </property>
              </widget>
             </item>
@@ -446,7 +453,7 @@
             <item>
              <widget class="QLabel" name="label_8">
               <property name="text">
-               <string>Pronounciation  : </string>
+               <string>PRONUNCIATION : </string>
               </property>
              </widget>
             </item>
@@ -456,7 +463,7 @@
             <item>
              <widget class="QLabel" name="label_12">
               <property name="text">
-               <string>Star : </string>
+               <string>STAR : </string>
               </property>
              </widget>
             </item>
@@ -469,27 +476,27 @@
               </item>
               <item>
                <property name="text">
-                <string>*</string>
+                <string>★</string>
                </property>
               </item>
               <item>
                <property name="text">
-                <string>**</string>
+                <string>★★</string>
                </property>
               </item>
               <item>
                <property name="text">
-                <string>***</string>
+                <string>★★★</string>
                </property>
               </item>
               <item>
                <property name="text">
-                <string>****</string>
+                <string>★★★★</string>
                </property>
               </item>
               <item>
                <property name="text">
-                <string>*****</string>
+                <string>★★★★★</string>
                </property>
               </item>
              </widget>
@@ -501,7 +508,7 @@
             <item>
              <widget class="QLabel" name="label_9">
               <property name="text">
-               <string>Meaning : </string>
+               <string>MEANING : </string>
               </property>
              </widget>
             </item>
@@ -515,7 +522,7 @@
             <item>
              <widget class="QLabel" name="label_10">
               <property name="text">
-               <string>Memo : </string>
+               <string>MEMO : </string>
               </property>
              </widget>
             </item>
@@ -571,7 +578,42 @@
             <item>
              <widget class="QCheckBox" name="Japanese_checkBox">
               <property name="text">
-               <string>Tick</string>
+               <string>Tick this box to edit or delete a data</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_15">
+            <item>
+             <widget class="QLabel" name="label_14">
+              <property name="text">
+               <string>Keyword : </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="Japanese_keyword_lineEdit"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="search_Japanese_keyword_by_word_pushButton">
+              <property name="text">
+               <string>Search Keyword by WORD</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="search_Japanese_keyword_by_pronunciation_pushButton">
+              <property name="text">
+               <string>Search Keyword by PRONUNCIATION</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="search_Japanese_keyword_by_memo_pushButton">
+              <property name="text">
+               <string>Search Keyword by MEMO</string>
               </property>
              </widget>
             </item>

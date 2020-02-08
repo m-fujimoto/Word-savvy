@@ -26,14 +26,16 @@ private slots:
     void on_actionFont_triggered();
     void on_actionAbout_triggered();
     void on_actionQuit_triggered();
+    void on_tabWidget_currentChanged();
 
     void on_English_add_pushButton_clicked();
     void on_English_edit_pushButton_clicked();
     void on_English_delete_pushButton_clicked();
     void on_English_reset_pushButton_clicked();
     void on_English_close_pushButton_clicked();
-    void on_word_search_pushButton_clicked();
-    void on_memo_searchpushButton_clicked();
+    void on_search_English_keyword_by_word_pushButton_clicked();
+    void on_search_English_keyword_by_pronunciation_pushButton_clicked();
+    void on_search_English_keyword_by_memo_pushButton_clicked();
     void on_English_tableWidget_cellDoubleClicked(int row);
 
     void on_Japanese_add_pushButton_clicked();
@@ -41,8 +43,10 @@ private slots:
     void on_Japanese_delete_pushButton_clicked();
     void on_Japanese_reset_pushButton_clicked();
     void on_Japanese_close_pushButton_clicked();
+    void on_search_Japanese_keyword_by_word_pushButton_clicked();
+    void on_search_Japanese_keyword_by_pronunciation_pushButton_clicked();
+    void on_search_Japanese_keyword_by_memo_pushButton_clicked();
     void on_Japanese_tableWidget_cellDoubleClicked(int row);
-    void on_tabWidget_currentChanged();
 
 private:
     Ui::MainWindow *ui;
@@ -61,6 +65,7 @@ private:
     QString star;
     QString date;
     QString choice;
+    QString keyword;
 
     QSqlError connectDatabase();
     QSqlError closeDatabase();
