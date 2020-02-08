@@ -1,18 +1,17 @@
-#
-# Word-savvy README
-#
 
-* Programme : Word-savvy
+# Word-savvy
 
-* Maintainer : m.fujimoto@yandex.ru
+The Word-savvy Team is pleased to announce the availability of Word-savvy 1.1.0.
+
+## About Word-savvy
  
-* Description : Tiny words database tool
+* Tiny words database tool
 
-* Supported OS : Windows10, FreeBSD-12.1-RELEASE
+## Supported OS 
 
-* Github : https://github.com/m-fujimoto/Word-savvy
+* Windows10, FreeBSD-12.1-RELEASE
 
-* Release history
+## Version
 
 * Version 1.1.0	(2020/02/14)
 	: Rewrite source code and add search function.
