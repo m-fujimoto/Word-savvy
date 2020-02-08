@@ -147,7 +147,7 @@ QSqlError MainWindow::insertData()
     if (word == "") {
         flag = false;
         QMessageBox msgBox;
-        msgBox.setText("The word is required.");
+        msgBox.setText("The WORD is required.");
         msgBox.exec();
     }
 
@@ -170,11 +170,11 @@ QSqlError MainWindow::insertData()
         if (query.exec())
         {
             QMessageBox msgBox;
-            msgBox.setText("The word was successfully recorded.");
+            msgBox.setText("The WORD was successfully recorded.");
             msgBox.exec();
         } else {
             QMessageBox msgBox;
-            msgBox.setText("The word was NOT recorded.");
+            msgBox.setText("The WORD was NOT recorded.");
             msgBox.exec();
         }
       }
@@ -211,7 +211,7 @@ QSqlError MainWindow::updateData()
     if (word == "") {
         flag = false;
         QMessageBox msgBox;
-        msgBox.setText("The word is required.");
+        msgBox.setText("The WORD is required.");
         msgBox.exec();
     }
 
@@ -232,11 +232,11 @@ QSqlError MainWindow::updateData()
         if (query.exec())
         {
             QMessageBox msgBox;
-            msgBox.setText("The word was successfully updated.");
+            msgBox.setText("The WORD was successfully updated.");
             msgBox.exec();
         } else {
             QMessageBox msgBox;
-            msgBox.setText("The word was NOT updated.");
+            msgBox.setText("The WORD was NOT updated.");
             msgBox.exec();
         }
     }
@@ -260,7 +260,7 @@ QSqlError MainWindow::deleteData()
     if (query.exec())
     {
         QMessageBox msgBox;
-        msgBox.setText("The word was successfully deleted.");
+        msgBox.setText("The WORD was successfully deleted.");
         msgBox.exec();
     }
     return QSqlError();
@@ -329,76 +329,98 @@ QSqlError MainWindow::searchData()
     if (ui->tabWidget->currentIndex() == 0)
     {
         tableName = "English";
-        ui->English_add_pushButton->setDisabled(false);
+        ui->English_add_pushButton->setDisabled(true);
         ui->English_edit_pushButton->setDisabled(true);
         ui->English_delete_pushButton->setDisabled(true);
-        ui->English_number_lineEdit->setText("1");
+        keyword = ui->English_keyword_lineEdit->text();
+    } else if (ui->tabWidget->currentIndex() == 1)
+    {
+        tableName = "Japanese";
+        ui->Japanese_add_pushButton->setDisabled(true);
+        ui->Japanese_edit_pushButton->setDisabled(true);
+        ui->Japanese_delete_pushButton->setDisabled(true);
+        keyword = ui->Japanese_keyword_lineEdit->text();
     }
 
-    QString keyword = ui->keyword_lineEdit->text();
-    QSqlQuery query;
-    if (choice == "WORD")
-    {
-        query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE WORD LIKE ?");
-    } else if (choice == "MEMO")
-    {
-        query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE MEMO LIKE ?");
+    bool flag = true;
+    if (keyword == "") {
+        flag = false;
+        QMessageBox msgBox;
+        msgBox.setText("The Keyword is required.");
+        msgBox.exec();
     }
-    query.bindValue(0,"%" + keyword + "%");
 
-    int i = {0};
-
-    if (query.exec())
+    if(flag)
     {
-        ui->English_tableWidget->setRowCount(0);
-        while (query.next())
-            {
-                number = query.value(0).toInt();
-                word = query.value(1).toString();
-                pronunciation = query.value(2).toString();
-                meaning = query.value(3).toString();
-                star = query.value(4).toString();
-                date = query.value(5).toString();
-                memo = query.value(6).toString();
-                QTableWidgetItem *newItem0 = new QTableWidgetItem(tr("%1").arg(number));
-                QTableWidgetItem *newItem1 = new QTableWidgetItem(tr("%1").arg(word));
-                QTableWidgetItem *newItem2 = new QTableWidgetItem(tr("%1").arg(pronunciation));
-                QTableWidgetItem *newItem3 = new QTableWidgetItem(tr("%1").arg(meaning));
-                QTableWidgetItem *newItem4 = new QTableWidgetItem(tr("%1").arg(star));
-                QTableWidgetItem *newItem5 = new QTableWidgetItem(tr("%1").arg(date));
-                QTableWidgetItem *newItem6 = new QTableWidgetItem(tr("%1").arg(memo));
+        QSqlQuery query;
+        if (choice == "WORD")
+        {
+            query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE WORD LIKE ?");
+        } else if (choice == "MEMO")
+        {
+            query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE MEMO LIKE ?");
+        } else if (choice == "PRONUNCIATION")
+        {
+            query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE PRONUNCIATION LIKE ?");
+        }
+        query.bindValue(0,"%" + keyword + "%");
 
-                if (ui->tabWidget->currentIndex() == 0)
+        int i = {0};
+
+        if (query.exec())
+        {
+            ui->English_tableWidget->setRowCount(0);
+            ui->Japanese_tableWidget->setRowCount(0);
+
+            while (query.next())
                 {
-                    ui->English_tableWidget->insertRow(i);
-                    ui->English_tableWidget->setItem(i, 0, newItem0);
-                    ui->English_tableWidget->setItem(i, 1, newItem1);
-                    ui->English_tableWidget->setItem(i, 2, newItem2);
-                    ui->English_tableWidget->setItem(i, 3, newItem3);
-                    ui->English_tableWidget->setItem(i, 4, newItem4);
-                    ui->English_tableWidget->setItem(i, 5, newItem5);
-                    ui->English_tableWidget->setItem(i, 6, newItem6);
+                    number = query.value(0).toInt();
+                    word = query.value(1).toString();
+                    pronunciation = query.value(2).toString();
+                    meaning = query.value(3).toString();
+                    star = query.value(4).toString();
+                    date = query.value(5).toString();
+                    memo = query.value(6).toString();
+                    QTableWidgetItem *newItem0 = new QTableWidgetItem(tr("%1").arg(number));
+                    QTableWidgetItem *newItem1 = new QTableWidgetItem(tr("%1").arg(word));
+                    QTableWidgetItem *newItem2 = new QTableWidgetItem(tr("%1").arg(pronunciation));
+                    QTableWidgetItem *newItem3 = new QTableWidgetItem(tr("%1").arg(meaning));
+                    QTableWidgetItem *newItem4 = new QTableWidgetItem(tr("%1").arg(star));
+                    QTableWidgetItem *newItem5 = new QTableWidgetItem(tr("%1").arg(date));
+                    QTableWidgetItem *newItem6 = new QTableWidgetItem(tr("%1").arg(memo));
+
+                    if (ui->tabWidget->currentIndex() == 0)
+                    {
+                        ui->English_tableWidget->insertRow(i);
+                        ui->English_tableWidget->setItem(i, 0, newItem0);
+                        ui->English_tableWidget->setItem(i, 1, newItem1);
+                        ui->English_tableWidget->setItem(i, 2, newItem2);
+                        ui->English_tableWidget->setItem(i, 3, newItem3);
+                        ui->English_tableWidget->setItem(i, 4, newItem4);
+                        ui->English_tableWidget->setItem(i, 5, newItem5);
+                        ui->English_tableWidget->setItem(i, 6, newItem6);
+                    } else if (ui->tabWidget->currentIndex() == 1)
+                    {
+                        ui->Japanese_tableWidget->insertRow(i);
+                        ui->Japanese_tableWidget->setItem(i, 0, newItem0);
+                        ui->Japanese_tableWidget->setItem(i, 1, newItem1);
+                        ui->Japanese_tableWidget->setItem(i, 2, newItem2);
+                        ui->Japanese_tableWidget->setItem(i, 3, newItem3);
+                        ui->Japanese_tableWidget->setItem(i, 4, newItem4);
+                        ui->Japanese_tableWidget->setItem(i, 5, newItem5);
+                        ui->Japanese_tableWidget->setItem(i, 6, newItem6);
+                    }
+                    i++;
                 }
-                i++;
-            }
-        ui->English_number_lineEdit->setText("");
+            ui->English_number_lineEdit->setText("");
+            ui->Japanese_number_lineEdit->setText("");
+        }
+
     }
     return QSqlError();
 }
 
 // Menu
-
-void MainWindow::on_actionQuit_triggered()
-{
-    this->close();
-}
-
-void MainWindow::on_actionAbout_triggered()
-{
-    QMessageBox msgBox;
-    msgBox.about(this,tr("About Word-savvy"),tr("<h3>Word-savvy 1.1.0</h3>"
-                                             "<p>Copyright (C) 2019,2020 Word-savvy Team</p>"));
-}
 
 void MainWindow::on_actionFont_triggered()
 {
@@ -409,6 +431,25 @@ void MainWindow::on_actionFont_triggered()
         ui->English_tableWidget->setFont(font);
         ui->Japanese_tableWidget->setFont(font);
     }
+}
+
+void MainWindow::on_actionAbout_triggered()
+{
+    QMessageBox msgBox;
+    msgBox.about(this,tr("About Word-savvy"),tr("<h3>Word-savvy 1.1.0</h3>"
+                                             "<p>Copyright (C) 2019,2020 Word-savvy Team</p>"));
+}
+
+void MainWindow::on_actionQuit_triggered()
+{
+    this->close();
+}
+
+// Tab
+
+void MainWindow::on_tabWidget_currentChanged()
+{
+    selectData();
 }
 
 // English
@@ -459,13 +500,19 @@ void MainWindow::on_English_close_pushButton_clicked()
     this->close();
 }
 
-void MainWindow::on_word_search_pushButton_clicked()
+void MainWindow::on_search_English_keyword_by_word_pushButton_clicked()
 {
     choice = "WORD";
     searchData();
 }
 
-void MainWindow::on_memo_searchpushButton_clicked()
+void MainWindow::on_search_English_keyword_by_pronunciation_pushButton_clicked()
+{
+    choice = "PRONUNCIATION";
+    searchData();
+}
+
+void MainWindow::on_search_English_keyword_by_memo_pushButton_clicked()
 {
     choice = "MEMO";
     searchData();
@@ -479,7 +526,7 @@ void MainWindow::clear_English_form()
     ui->English_meaning_lineEdit->setText("");
     ui->English_textEdit->setText("");
     ui->English_checkBox->setChecked(false);
-    ui->keyword_lineEdit->setText("");
+    ui->English_keyword_lineEdit->setText("");
 }
 
 void MainWindow::on_English_tableWidget_cellDoubleClicked(int row)
@@ -536,6 +583,24 @@ void MainWindow::on_Japanese_close_pushButton_clicked()
     this->close();
 }
 
+void MainWindow::on_search_Japanese_keyword_by_word_pushButton_clicked()
+{
+    choice = "WORD";
+    searchData();
+}
+
+void MainWindow::on_search_Japanese_keyword_by_memo_pushButton_clicked()
+{
+    choice = "MEMO";
+    searchData();
+}
+
+void MainWindow::on_search_Japanese_keyword_by_pronunciation_pushButton_clicked()
+{
+    choice = "PRONUNCIATION";
+    searchData();
+}
+
 void MainWindow::clear_Japanese_form()
 {
     ui->Japanese_word_lineEdit->setText("");
@@ -552,10 +617,10 @@ void MainWindow::on_Japanese_tableWidget_cellDoubleClicked(int row)
     setData();
 }
 
-void MainWindow::on_tabWidget_currentChanged()
-{
-    selectData();
-}
+
+
+
+
 
 
 
