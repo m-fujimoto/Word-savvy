@@ -49,7 +49,7 @@ private:
 
     QString applicationName = "Word-savvy";
     QString appTitle = applicationName;
-    QString sqlitedbName = "word-savvy.db";
+    QString sqlitedbName = "Word-savvy.db";
     QString databaseName = QCoreApplication::applicationDirPath() + "/" + sqlitedbName;
     QSqlDatabase db;
     QString tableName;
