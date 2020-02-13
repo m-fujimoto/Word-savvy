@@ -4,8 +4,6 @@
 
 * Programme : Word-savvy
 
-* Maintainer : m.fujimoto@yandex.ru
- 
 * Description : Tiny words database tool
 
 * Supported OS : Windows10, FreeBSD-12.1-RELEASE
