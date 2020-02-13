@@ -57,7 +57,7 @@ QSqlError MainWindow::selectData()
     }
 
     QSqlQuery query;
-    query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' ORDER BY NUMBER DESC");
+    query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH,MEANING, STAR, DATE, MEMO FROM '" + tableName + "' ORDER BY NUMBER DESC");
 
     int i = {0};
 
@@ -70,17 +70,19 @@ QSqlError MainWindow::selectData()
             number = query.value(0).toInt();
             word = query.value(1).toString();
             pronunciation = query.value(2).toString();
-            meaning = query.value(3).toString();
-            star = query.value(4).toString();
-            date = query.value(5).toString();
-            memo = query.value(6).toString();
+            part_of_speech =query.value(3).toString();
+            meaning = query.value(4).toString();
+            star = query.value(5).toString();
+            date = query.value(6).toString();
+            memo = query.value(7).toString();
             QTableWidgetItem *newItem0 = new QTableWidgetItem(tr("%1").arg(number));
             QTableWidgetItem *newItem1 = new QTableWidgetItem(tr("%1").arg(word));
             QTableWidgetItem *newItem2 = new QTableWidgetItem(tr("%1").arg(pronunciation));
-            QTableWidgetItem *newItem3 = new QTableWidgetItem(tr("%1").arg(meaning));
-            QTableWidgetItem *newItem4 = new QTableWidgetItem(tr("%1").arg(star));
-            QTableWidgetItem *newItem5 = new QTableWidgetItem(tr("%1").arg(date));
-            QTableWidgetItem *newItem6 = new QTableWidgetItem(tr("%1").arg(memo));
+            QTableWidgetItem *newItem3 = new QTableWidgetItem(tr("%1").arg(part_of_speech));
+            QTableWidgetItem *newItem4 = new QTableWidgetItem(tr("%1").arg(meaning));
+            QTableWidgetItem *newItem5 = new QTableWidgetItem(tr("%1").arg(star));
+            QTableWidgetItem *newItem6 = new QTableWidgetItem(tr("%1").arg(date));
+            QTableWidgetItem *newItem7 = new QTableWidgetItem(tr("%1").arg(memo));
 
             if (ui->tabWidget->currentIndex() == 0)
             {
@@ -92,6 +94,7 @@ QSqlError MainWindow::selectData()
                 ui->English_tableWidget->setItem(i, 4, newItem4);
                 ui->English_tableWidget->setItem(i, 5, newItem5);
                 ui->English_tableWidget->setItem(i, 6, newItem6);
+                ui->English_tableWidget->setItem(i, 7, newItem6);
                 if (i == 0) {
                     ui->English_number_lineEdit->setText(QString::number(number + 1));
                 }
@@ -107,6 +110,7 @@ QSqlError MainWindow::selectData()
                 ui->Japanese_tableWidget->setItem(i, 4, newItem4);
                 ui->Japanese_tableWidget->setItem(i, 5, newItem5);
                 ui->Japanese_tableWidget->setItem(i, 6, newItem6);
+                ui->Japanese_tableWidget->setItem(i, 7, newItem6);
                 if (i == 0) {
                     ui->Japanese_number_lineEdit->setText(QString::number(number + 1));
                 }
@@ -129,6 +133,7 @@ QSqlError MainWindow::insertData()
         number = ui->English_number_lineEdit->text().toInt();
         word = ui->English_word_lineEdit->text();
         pronunciation = ui->English_pronunciation_lineEdit->text();
+        part_of_speech = ui->English_part_of_speech_comboBox->currentText();
         meaning = ui->English_meaning_lineEdit->text();
         star = ui->English_comboBox->currentText();
         memo = ui->English_textEdit->toPlainText();
@@ -139,6 +144,7 @@ QSqlError MainWindow::insertData()
         number = ui->Japanese_number_lineEdit->text().toInt();
         word = ui->Japanese_word_lineEdit->text();
         pronunciation = ui->Japanese_pronunciation_lineEdit->text();
+        part_of_speech = ui->Japanese_part_of_speech_comboBox->currentText();
         meaning = ui->Japanese_meaning_lineEdit->text();
         star = ui->Japanese_comboBox->currentText();
         memo = ui->Japanese_textEdit->toPlainText();
@@ -154,18 +160,19 @@ QSqlError MainWindow::insertData()
     if (flag)
     {
         QSqlQuery tablequery;
-        if (tablequery.exec("CREATE TABLE IF NOT EXISTS '" + tableName + "'"" (NUMBER INTEGER, WORD TEXT, PRONUNCIATION TEXT, MEANING TEXT, STAR TEXT, DATE TEXT, MEMO TEXT)"))    {
+        if (tablequery.exec("CREATE TABLE IF NOT EXISTS '" + tableName + "'"" (NUMBER INTEGER, WORD TEXT, PRONUNCIATION TEXT, PART_OF_SPEECH TEXT, MEANING TEXT, STAR TEXT, DATE TEXT, MEMO TEXT)"))    {
 
         QSqlQuery query;
-        query.prepare("INSERT INTO '" + tableName + "'"" (NUMBER, WORD, PRONUNCIATION, MEANING, STAR, DATE, MEMO) "
-                                                 "VALUES (:number, :word, :pronunciation, :meaning, :star, :date, :memo)");
+        query.prepare("INSERT INTO '" + tableName + "'"" (NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH ,MEANING, STAR, DATE, MEMO) "
+                                                 "VALUES (:number, :word, :pronunciation, :part_of_speech, :meaning, :star, :date, :memo)");
         query.bindValue(0, number);
         query.bindValue(1, word);
         query.bindValue(2, pronunciation);
-        query.bindValue(3, meaning);
-        query.bindValue(4, star);
-        query.bindValue(5, date);
-        query.bindValue(6, memo);
+        query.bindValue(3, part_of_speech);
+        query.bindValue(4, meaning);
+        query.bindValue(5, star);
+        query.bindValue(6, date);
+        query.bindValue(7, memo);
 
         if (query.exec())
         {
@@ -190,6 +197,7 @@ QSqlError MainWindow::updateData()
         number = ui->English_number_lineEdit->text().toInt();
         word = ui->English_word_lineEdit->text();
         pronunciation = ui->English_pronunciation_lineEdit->text();
+        part_of_speech = ui->English_part_of_speech_comboBox->currentText();
         meaning = ui->English_meaning_lineEdit->text();
         star = ui->English_comboBox->currentText();
         memo = ui->English_textEdit->toPlainText();
@@ -199,6 +207,7 @@ QSqlError MainWindow::updateData()
         number = ui->Japanese_number_lineEdit->text().toInt();
         word = ui->Japanese_word_lineEdit->text();
         pronunciation = ui->Japanese_pronunciation_lineEdit->text();
+        part_of_speech = ui->Japanese_part_of_speech_comboBox->currentText();
         meaning = ui->Japanese_meaning_lineEdit->text();
         star = ui->Japanese_comboBox->currentText();
         memo = ui->Japanese_textEdit->toPlainText();
@@ -218,16 +227,17 @@ QSqlError MainWindow::updateData()
     if (flag)
     {
         QSqlQuery query;
-        query.prepare("UPDATE '" + tableName + "' SET NUMBER = ?, WORD = ?, PRONUNCIATION = ?, MEANING = ?, STAR = ?, DATE = ?, MEMO = ? WHERE NUMBER = ?");
+        query.prepare("UPDATE '" + tableName + "' SET NUMBER = ?, WORD = ?, PRONUNCIATION = ?, PART_OF_SPEECH, MEANING = ?, STAR = ?, DATE = ?, MEMO = ? WHERE NUMBER = ?");
 
         query.bindValue(0, number);
         query.bindValue(1, word);
         query.bindValue(2, pronunciation);
-        query.bindValue(3, meaning);
-        query.bindValue(4, star);
-        query.bindValue(5, date);
-        query.bindValue(6, memo);
-        query.bindValue(7, number);
+        query.bindValue(3, part_of_speech);
+        query.bindValue(4, meaning);
+        query.bindValue(5, star);
+        query.bindValue(6, date);
+        query.bindValue(7, memo);
+        query.bindValue(8, number);
 
         if (query.exec())
         {
@@ -285,7 +295,7 @@ QSqlError MainWindow::setData()
     }
 
     QSqlQuery query;
-    query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, MEANING, STAR , DATE, MEMO FROM '" + tableName + "' WHERE NUMBER = ?");
+    query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH , MEANING, STAR , DATE, MEMO FROM '" + tableName + "' WHERE NUMBER = ?");
     query.bindValue(0,number);
 
     if (query.exec())
@@ -295,16 +305,18 @@ QSqlError MainWindow::setData()
             number = query.value(0).toInt();
             word = query.value(1).toString();
             pronunciation = query.value(2).toString();
-            meaning = query.value(3).toString();
-            star = query.value(4).toString();
-            date = query.value(5).toString();
-            memo = query.value(6).toString();
+            part_of_speech = query.value(3).toString();
+            meaning = query.value(4).toString();
+            star = query.value(5).toString();
+            date = query.value(6).toString();
+            memo = query.value(7).toString();
 
             if (ui->tabWidget->currentIndex() == 0)
             {
                 ui->English_number_lineEdit->setText(QString::number(number));
                 ui->English_word_lineEdit->setText(word);
                 ui->English_pronunciation_lineEdit->setText(pronunciation);
+                ui->English_part_of_speech_comboBox->setCurrentText(part_of_speech);
                 ui->English_meaning_lineEdit->setText(meaning);
                 ui->English_comboBox->setCurrentText(star);
                 ui->English_textEdit->setText(memo);
@@ -315,6 +327,7 @@ QSqlError MainWindow::setData()
                 ui->Japanese_number_lineEdit->setText(QString::number(number));
                 ui->Japanese_word_lineEdit->setText(word);
                 ui->Japanese_pronunciation_lineEdit->setText(pronunciation);
+                ui->Japanese_part_of_speech_comboBox->setCurrentText(part_of_speech);
                 ui->Japanese_meaning_lineEdit->setText(meaning);
                 ui->Japanese_comboBox->setCurrentText(star);
                 ui->Japanese_textEdit->setText(memo);
@@ -355,13 +368,13 @@ QSqlError MainWindow::searchData()
         QSqlQuery query;
         if (choice == "WORD")
         {
-            query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE WORD LIKE ?");
+            query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE WORD LIKE ?");
         } else if (choice == "MEMO")
         {
-            query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE MEMO LIKE ?");
+            query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE MEMO LIKE ?");
         } else if (choice == "PRONUNCIATION")
         {
-            query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE PRONUNCIATION LIKE ?");
+            query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE PRONUNCIATION LIKE ?");
         }
         query.bindValue(0,"%" + keyword + "%");
 
@@ -377,17 +390,19 @@ QSqlError MainWindow::searchData()
                     number = query.value(0).toInt();
                     word = query.value(1).toString();
                     pronunciation = query.value(2).toString();
-                    meaning = query.value(3).toString();
-                    star = query.value(4).toString();
-                    date = query.value(5).toString();
-                    memo = query.value(6).toString();
+                    part_of_speech = query.value(3).toString();
+                    meaning = query.value(4).toString();
+                    star = query.value(5).toString();
+                    date = query.value(6).toString();
+                    memo = query.value(7).toString();
                     QTableWidgetItem *newItem0 = new QTableWidgetItem(tr("%1").arg(number));
                     QTableWidgetItem *newItem1 = new QTableWidgetItem(tr("%1").arg(word));
                     QTableWidgetItem *newItem2 = new QTableWidgetItem(tr("%1").arg(pronunciation));
-                    QTableWidgetItem *newItem3 = new QTableWidgetItem(tr("%1").arg(meaning));
-                    QTableWidgetItem *newItem4 = new QTableWidgetItem(tr("%1").arg(star));
-                    QTableWidgetItem *newItem5 = new QTableWidgetItem(tr("%1").arg(date));
-                    QTableWidgetItem *newItem6 = new QTableWidgetItem(tr("%1").arg(memo));
+                    QTableWidgetItem *newItem3 = new QTableWidgetItem(tr("%1").arg(part_of_speech));
+                    QTableWidgetItem *newItem4 = new QTableWidgetItem(tr("%1").arg(meaning));
+                    QTableWidgetItem *newItem5 = new QTableWidgetItem(tr("%1").arg(star));
+                    QTableWidgetItem *newItem6 = new QTableWidgetItem(tr("%1").arg(date));
+                    QTableWidgetItem *newItem7 = new QTableWidgetItem(tr("%1").arg(memo));
 
                     if (ui->tabWidget->currentIndex() == 0)
                     {
@@ -399,6 +414,7 @@ QSqlError MainWindow::searchData()
                         ui->English_tableWidget->setItem(i, 4, newItem4);
                         ui->English_tableWidget->setItem(i, 5, newItem5);
                         ui->English_tableWidget->setItem(i, 6, newItem6);
+                        ui->English_tableWidget->setItem(i, 7, newItem7);
                     } else if (ui->tabWidget->currentIndex() == 1)
                     {
                         ui->Japanese_tableWidget->insertRow(i);
@@ -409,6 +425,7 @@ QSqlError MainWindow::searchData()
                         ui->Japanese_tableWidget->setItem(i, 4, newItem4);
                         ui->Japanese_tableWidget->setItem(i, 5, newItem5);
                         ui->Japanese_tableWidget->setItem(i, 6, newItem6);
+                        ui->Japanese_tableWidget->setItem(i, 7, newItem7);
                     }
                     i++;
                 }
@@ -522,6 +539,7 @@ void MainWindow::clear_English_form()
 {
     ui->English_word_lineEdit->setText("");
     ui->English_pronunciation_lineEdit->setText("");
+    ui->English_part_of_speech_comboBox->setCurrentIndex(0);
     ui->English_comboBox->setCurrentIndex(0);
     ui->English_meaning_lineEdit->setText("");
     ui->English_textEdit->setText("");
@@ -605,6 +623,7 @@ void MainWindow::clear_Japanese_form()
 {
     ui->Japanese_word_lineEdit->setText("");
     ui->Japanese_pronunciation_lineEdit->setText("");
+    ui->Japanese_part_of_speech_comboBox->setCurrentIndex(0);
     ui->Japanese_comboBox->setCurrentIndex(0);
     ui->Japanese_meaning_lineEdit->setText("");
     ui->Japanese_textEdit->setText("");

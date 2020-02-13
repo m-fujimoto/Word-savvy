@@ -31,7 +31,7 @@
     <item>
      <widget class="QTabWidget" name="tabWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="English_tab">
        <attribute name="title">
@@ -95,6 +95,11 @@
             </column>
             <column>
              <property name="text">
+              <string>PART OF SPEECH</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
               <string>MEANING</string>
              </property>
             </column>
@@ -150,6 +155,57 @@
             </item>
             <item>
              <widget class="QLineEdit" name="English_pronunciation_lineEdit"/>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_15">
+              <property name="text">
+               <string>PART OF SPEECH : </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="English_part_of_speech_comboBox">
+              <item>
+               <property name="text">
+                <string/>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>n.</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>v.</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>pron.</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>prep.</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>adj.</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>adv.</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>conj.</string>
+               </property>
+              </item>
+             </widget>
             </item>
             <item>
              <widget class="QLabel" name="label_11">
@@ -384,6 +440,9 @@
             <attribute name="horizontalHeaderStretchLastSection">
              <bool>true</bool>
             </attribute>
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
             <attribute name="verticalHeaderStretchLastSection">
              <bool>false</bool>
             </attribute>
@@ -400,6 +459,11 @@
             <column>
              <property name="text">
               <string>PRONUNCIATION</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>PART OF SPEECH</string>
              </property>
             </column>
             <column>
@@ -459,6 +523,57 @@
             </item>
             <item>
              <widget class="QLineEdit" name="Japanese_pronunciation_lineEdit"/>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_16">
+              <property name="text">
+               <string>PART OF SPEECH : </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="Japanese_part_of_speech_comboBox">
+              <item>
+               <property name="text">
+                <string/>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>n.</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>v.</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>pron.</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>prep.</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>adj.</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>adv.</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>conj.</string>
+               </property>
+              </item>
+             </widget>
             </item>
             <item>
              <widget class="QLabel" name="label_12">

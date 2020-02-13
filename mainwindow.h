@@ -60,6 +60,7 @@ private:
     int number;
     QString word;
     QString pronunciation;
+    QString part_of_speech;
     QString meaning;
     QString memo;
     QString star;
