@@ -11,7 +11,7 @@ Tiny words database tool
 
 Windows10, FreeBSD-12.1-RELEASE
 
-## Version
+## Release history
 
 * 1.1.0	(2020/02/14)
 	: Add part of speech field and search function.
