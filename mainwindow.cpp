@@ -94,7 +94,7 @@ QSqlError MainWindow::selectData()
                 ui->English_tableWidget->setItem(i, 4, newItem4);
                 ui->English_tableWidget->setItem(i, 5, newItem5);
                 ui->English_tableWidget->setItem(i, 6, newItem6);
-                ui->English_tableWidget->setItem(i, 7, newItem6);
+                ui->English_tableWidget->setItem(i, 7, newItem7);
                 if (i == 0) {
                     ui->English_number_lineEdit->setText(QString::number(number + 1));
                 }
@@ -110,7 +110,7 @@ QSqlError MainWindow::selectData()
                 ui->Japanese_tableWidget->setItem(i, 4, newItem4);
                 ui->Japanese_tableWidget->setItem(i, 5, newItem5);
                 ui->Japanese_tableWidget->setItem(i, 6, newItem6);
-                ui->Japanese_tableWidget->setItem(i, 7, newItem6);
+                ui->Japanese_tableWidget->setItem(i, 7, newItem7);
                 if (i == 0) {
                     ui->Japanese_number_lineEdit->setText(QString::number(number + 1));
                 }
