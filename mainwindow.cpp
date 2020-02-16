@@ -227,7 +227,7 @@ QSqlError MainWindow::updateData()
     if (flag)
     {
         QSqlQuery query;
-        query.prepare("UPDATE '" + tableName + "' SET NUMBER = ?, WORD = ?, PRONUNCIATION = ?, PART_OF_SPEECH, MEANING = ?, STAR = ?, DATE = ?, MEMO = ? WHERE NUMBER = ?");
+        query.prepare("UPDATE '" + tableName + "' SET NUMBER = ?, WORD = ?, PRONUNCIATION = ?, PART_OF_SPEECH = ?, MEANING = ?, STAR = ?, DATE = ?, MEMO = ? WHERE NUMBER = ?");
 
         query.bindValue(0, number);
         query.bindValue(1, word);
