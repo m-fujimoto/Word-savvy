@@ -464,20 +464,20 @@ QSqlError MainWindow::searchData()
         QSqlQuery query;
         if (choice == "WORD")
         {
-            query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE WORD LIKE ?");
+            query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE WORD LIKE ? ORDER BY NUMBER DESC");
         } else if (choice == "PRONUNCIATION")
         {
-            query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE PRONUNCIATION LIKE ?");
+            query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE PRONUNCIATION LIKE ? ORDER BY NUMBER DESC");
         } else if (choice == "CEFR")
         {
-            query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE PART_OF_SPEECH LIKE ?");
+            query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE PART_OF_SPEECH LIKE ? ORDER BY NUMBER DESC");
         }
         else if (choice == "STAR")
         {
-            query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE STAR=?");
+            query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE STAR = ? ORDER BY NUMBER DESC");
         } else if (choice == "MEMO")
         {
-            query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE MEMO LIKE ?");
+            query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE MEMO LIKE ? ORDER BY NUMBER DESC");
         }
 
         if (choice == "STAR")
@@ -552,6 +552,9 @@ QSqlError MainWindow::searchData()
             ui->English_number_lineEdit->setText("");
             ui->Japanese_number_lineEdit->setText("");
             ui->Oxford_number_lineEdit->setText("");
+            ui->English_keyword_lineEdit->setText("");
+            ui->Japanese_keyword_lineEdit->setText("");
+            ui->Oxford_keyword_lineEdit->setText("");
         }
 
     }
@@ -873,13 +876,12 @@ void MainWindow::on_actionManual_triggered()
     ManualWindow->show();
 }
 
-void MainWindow::on_actionAbout_Word_savvy_triggered()
+void MainWindow::on_actionAbout_triggered()
 {
     QMessageBox msgBox;
     msgBox.about(this,tr("About Word-savvy"),tr("<h3>Word-savvy 1.2.0</h3>"
                                              "<p>Copyright (C) 2019,2020 Word-savvy Team</p>"));
 }
-
 
 // Tab
 
