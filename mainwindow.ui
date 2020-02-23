@@ -647,7 +647,7 @@
             <item>
              <widget class="QLabel" name="label_14">
               <property name="text">
-               <string>Keyword : </string>
+               <string>KEYWORD : </string>
               </property>
              </widget>
             </item>
@@ -657,21 +657,21 @@
             <item>
              <widget class="QPushButton" name="search_Japanese_keyword_by_word_pushButton">
               <property name="text">
-               <string>Search Keyword by WORD</string>
+               <string>Search KEYWORD by WORD</string>
               </property>
              </widget>
             </item>
             <item>
              <widget class="QPushButton" name="search_Japanese_keyword_by_pronunciation_pushButton">
               <property name="text">
-               <string>Search Keyword by PRONUNCIATION</string>
+               <string>Search KEYWORD by PRONUNCIATION</string>
               </property>
              </widget>
             </item>
             <item>
              <widget class="QPushButton" name="search_Japanese_keyword_by_memo_pushButton">
               <property name="text">
-               <string>Search Keyword by MEMO</string>
+               <string>Search KEYWORD by MEMO</string>
               </property>
              </widget>
             </item>
@@ -1023,7 +1023,7 @@
            <item>
             <widget class="QLabel" name="label_24">
              <property name="text">
-              <string>Keyword : </string>
+              <string>KEYWORD : </string>
              </property>
             </widget>
            </item>
@@ -1052,14 +1052,14 @@
               </sizepolicy>
              </property>
              <property name="text">
-              <string>Search Keyword by WORD</string>
+              <string>Search KEYWORD by WORD</string>
              </property>
             </widget>
            </item>
            <item>
             <widget class="QPushButton" name="search_Oxford_keyword_by_pronunciation_pushButton">
              <property name="text">
-              <string>Search Keyword by PRONUNCIATION</string>
+              <string>Search KEYWORD by PRONUNCIATION</string>
              </property>
             </widget>
            </item>
@@ -1072,7 +1072,7 @@
               </sizepolicy>
              </property>
              <property name="text">
-              <string>Search Keyword  by MEMO</string>
+              <string>Search KEYWORD  by MEMO</string>
              </property>
             </widget>
            </item>
@@ -1113,7 +1113,7 @@
      <x>0</x>
      <y>0</y>
      <width>1045</width>
-     <height>20</height>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">

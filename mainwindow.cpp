@@ -69,7 +69,7 @@ QSqlError MainWindow::selectData()
         ui->Oxford_delete_pushButton->setDisabled(true);
         ui->Oxford_checkBox->setDisabled(false);
 
-        if ((tableName == "Oxford 3000") ||(tableName == "Oxford 5000") || (tableName == "Oxford 5000 excluding Oxford 3000") || (tableName == "Oxford Phrasal Academic Lexicon"))
+        if ((tableName == "Oxford 3000") ||(tableName == "Oxford 5000") || (tableName == "Oxford 5000 excluding Oxford 3000"))
         {
             QStringList header = { "NUMBER", "WORD", "PRONUNCIATION", "PART OF SPEECH / CEFR", "MEANING", "STAR", "DATE", "MEMO"};
             ui->Oxford_tableWidget->setHorizontalHeaderLabels(header);

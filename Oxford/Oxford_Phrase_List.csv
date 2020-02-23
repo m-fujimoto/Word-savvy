@@ -1,0 +1,751 @@
+NUMBER=WORD=PRONUNCIATION=PART_OF_SPEECH=MEANING=STAR=DATE=MEMO
+1=a bit==A2==☆☆☆☆☆==
+2=a bit more==B1==☆☆☆☆☆==
+3=a bit of a…==B2==☆☆☆☆☆==
+4=a bit of sth==B1==☆☆☆☆☆==
+5=a couple of sth==A2==☆☆☆☆☆==
+6=a few==A1==☆☆☆☆☆==
+7=a good idea==A1==☆☆☆☆☆==
+8=a great deal==B1==☆☆☆☆☆==
+9=a kind of...==B1==☆☆☆☆☆==
+10=a little==A1==☆☆☆☆☆==
+11=a little bit==B1==☆☆☆☆☆==
+12=a little more==B1==☆☆☆☆☆==
+13=a long time ago==A2==☆☆☆☆☆==
+14=a long way==A2==☆☆☆☆☆==
+15=a lot==A1==☆☆☆☆☆==
+16=a lot more==B1==☆☆☆☆☆==
+17=a lot of sth==A1==☆☆☆☆☆==
+18=a means of sth==B2==☆☆☆☆☆==
+19=a number of sth==A2==☆☆☆☆☆==
+20=a period of time==A1==☆☆☆☆☆==
+21=a range of sth==B1==☆☆☆☆☆==
+22=a variety of sth==B1==☆☆☆☆☆==
+23=able to do sth==A2==☆☆☆☆☆==
+24=above all==C1==☆☆☆☆☆==
+25=access to sth==B1==☆☆☆☆☆==
+26=account for sth==B2==☆☆☆☆☆==
+27=accused of sth==B2==☆☆☆☆☆==
+28=act as sth==B2==☆☆☆☆☆==
+29=add to sth==A2==☆☆☆☆☆==
+30=after all==B1==☆☆☆☆☆==
+31=again and again==A2==☆☆☆☆☆==
+32=agree with sb==A1==☆☆☆☆☆==
+33=aim to do sth==B1==☆☆☆☆☆==
+34=aimed at doing sth==B2==☆☆☆☆☆==
+35=aimed at sb==B2==☆☆☆☆☆==
+36=all about…==A2==☆☆☆☆☆==
+37=all but==C1==☆☆☆☆☆==
+38=all day==A1==☆☆☆☆☆==
+39=all kinds of…==A2==☆☆☆☆☆==
+40=all over the world==A1==☆☆☆☆☆==
+41=all over…==A2==☆☆☆☆☆==
+42=all sorts of…==A2==☆☆☆☆☆==
+43=all the more==C1==☆☆☆☆☆==
+44=all the time==A2==☆☆☆☆☆==
+45=all the way==B2==☆☆☆☆☆==
+46=along with sb/sth==B1==☆☆☆☆☆==
+47=alternative to sth==B1==☆☆☆☆☆==
+48=and so on==B1==☆☆☆☆☆==
+49=anything else==A1==☆☆☆☆☆==
+50=apart from==B1==☆☆☆☆☆==
+51=appeal to sb==B2==☆☆☆☆☆==
+52=apply for sth==A2==☆☆☆☆☆==
+53=apply to sb/sth==B2==☆☆☆☆☆==
+54=around the world==A1==☆☆☆☆☆==
+55=arrive at…==A1==☆☆☆☆☆==
+56=arrive in…==A1==☆☆☆☆☆==
+57=art gallery==A2==☆☆☆☆☆==
+58=as a result==A2==☆☆☆☆☆==
+59=as a whole==B2==☆☆☆☆☆==
+60=as far as I am concerned==B2==☆☆☆☆☆==
+61=as far as sb/sth is concerned==C1==☆☆☆☆☆==
+62=as follows…==B2==☆☆☆☆☆==
+63=as for sb/sth==B2==☆☆☆☆☆==
+64=as if…==B1==☆☆☆☆☆==
+65=as long as…==B2==☆☆☆☆☆==
+66=as much as==B1==☆☆☆☆☆==
+67=as of…==C1==☆☆☆☆☆==
+68=as opposed to==C1==☆☆☆☆☆==
+69=as part of sth==A2==☆☆☆☆☆==
+70=as soon as==A2==☆☆☆☆☆==
+71=as soon as possible==B1==☆☆☆☆☆==
+72=as such==C1==☆☆☆☆☆==
+73=as though…==B2==☆☆☆☆☆==
+74=as to==C1==☆☆☆☆☆==
+75=as well==A2==☆☆☆☆☆==
+76=ask for sth==A1==☆☆☆☆☆==
+77=associated with sth==B2==☆☆☆☆☆==
+78=at first==A2==☆☆☆☆☆==
+79=at home==A1==☆☆☆☆☆==
+80=at last==B1==☆☆☆☆☆==
+81=at least==A2==☆☆☆☆☆==
+82=at once==B2==☆☆☆☆☆==
+83=at present==B2==☆☆☆☆☆==
+84=at risk==B1==☆☆☆☆☆==
+85=at school==A1==☆☆☆☆☆==
+86=at some point==B2==☆☆☆☆☆==
+87=at the age of…==A2==☆☆☆☆☆==
+88=at the beginning of sth==A1==☆☆☆☆☆==
+89=at the end==A1==☆☆☆☆☆==
+90=at the end of sth==A1==☆☆☆☆☆==
+91=at the end of the day==B2==☆☆☆☆☆==
+92=at the expense of sb/sth==C1==☆☆☆☆☆==
+93=at the hands of sb==C1==☆☆☆☆☆==
+94=at the moment==A1==☆☆☆☆☆==
+95=at the same time==A1==☆☆☆☆☆==
+96=at the start of sth==A2==☆☆☆☆☆==
+97=at the time==A2==☆☆☆☆☆==
+98=at the time of sth==A2==☆☆☆☆☆==
+99=at the top==A2==☆☆☆☆☆==
+100=at the weekend==A1==☆☆☆☆☆==
+101=at this point==B2==☆☆☆☆☆==
+102=at this stage==B2==☆☆☆☆☆==
+103=at times==B1==☆☆☆☆☆==
+104=at university==A1==☆☆☆☆☆==
+105=at work==A1==☆☆☆☆☆==
+106=attached to sb/sth==B1==☆☆☆☆☆==
+107=awareness of sth==B2==☆☆☆☆☆==
+108=away from sb/sth==A1==☆☆☆☆☆==
+109=back and forth==C1==☆☆☆☆☆==
+110=back sb/sth up==B2==☆☆☆☆☆==
+111=bad for sb/sth==A1==☆☆☆☆☆==
+112=bad news==A1==☆☆☆☆☆==
+113=bad thing==A1==☆☆☆☆☆==
+114=based on sth==A2==☆☆☆☆☆==
+115=be about to do sth==B1==☆☆☆☆☆==
+116=be allowed to do sth==A2==☆☆☆☆☆==
+117=be attributed to sb==C1==☆☆☆☆☆==
+118=be charged with sth==B2==☆☆☆☆☆==
+119=be derived from sth==B2==☆☆☆☆☆==
+120=be entitled to sth==C1==☆☆☆☆☆==
+121=be expected to do sth==B2==☆☆☆☆☆==
+122=be found to do sth==C1==☆☆☆☆☆==
+123=be going on==B1==☆☆☆☆☆==
+124=be going to do sth==A1==☆☆☆☆☆==
+125=be known as sb/sth==B1==☆☆☆☆☆==
+126=be known to do sth==B2==☆☆☆☆☆==
+127=be made of sth==A2==☆☆☆☆☆==
+128=be made up of sth==B2==☆☆☆☆☆==
+129=be meant to do sth==C1==☆☆☆☆☆==
+130=be reported to be sth==C1==☆☆☆☆☆==
+131=be said to be sth==C1==☆☆☆☆☆==
+132=be supposed to do sth==B1==☆☆☆☆☆==
+133=be surrounded by sb/sth==B2==☆☆☆☆☆==
+134=be to blame==B2==☆☆☆☆☆==
+135=bear sb/sth in mind==C1==☆☆☆☆☆==
+136=because of==A1==☆☆☆☆☆==
+137=begin with sth==A1==☆☆☆☆☆==
+138=believe in sb/sth==A2==☆☆☆☆☆==
+139=belong to sb==A2==☆☆☆☆☆==
+140=belong to sth==A2==☆☆☆☆☆==
+141=benefit from sth==B1==☆☆☆☆☆==
+142=best friend==A1==☆☆☆☆☆==
+143=black and white==A1==☆☆☆☆☆==
+144=both sides==B2==☆☆☆☆☆==
+145=bound to do sth==B2==☆☆☆☆☆==
+146=break up==B1==☆☆☆☆☆==
+147=bring sb up==B2==☆☆☆☆☆==
+148=bring sth about==C1==☆☆☆☆☆==
+149=bring sth up==C1==☆☆☆☆☆==
+150=by means of sth==C1==☆☆☆☆☆==
+151=by no means==C1==☆☆☆☆☆==
+152=by now==B2==☆☆☆☆☆==
+153=by the end of sth==A2==☆☆☆☆☆==
+154=by the time (that)…==B1==☆☆☆☆☆==
+155=call for sth==B2==☆☆☆☆☆==
+156=call on sb==C1==☆☆☆☆☆==
+157=can't afford sth==B1==☆☆☆☆☆==
+158=car park==A1==☆☆☆☆☆==
+159=care about sth==A2==☆☆☆☆☆==
+160=care for sb==B1==☆☆☆☆☆==
+161=carry on==A2==☆☆☆☆☆==
+162=carry sth out==A2==☆☆☆☆☆==
+163=case study==B2==☆☆☆☆☆==
+164=caused by sth==B1==☆☆☆☆☆==
+165=cell phone==A1==☆☆☆☆☆==
+166=check in==A2==☆☆☆☆☆==
+167=check out==A2==☆☆☆☆☆==
+168=check sb/sth out==B1==☆☆☆☆☆==
+169=choose to do sth==B1==☆☆☆☆☆==
+170=city centre==A1==☆☆☆☆☆==
+171=clean up==B1==☆☆☆☆☆==
+172=click on sth==B1==☆☆☆☆☆==
+173=climate change==A2==☆☆☆☆☆==
+174=close to sb/sth==A2==☆☆☆☆☆==
+175=come across sb/sth==B2==☆☆☆☆☆==
+176=come back==A2==☆☆☆☆☆==
+177=come from…==A1==☆☆☆☆☆==
+178=come into sth==A1==☆☆☆☆☆==
+179=Come on!==A2==☆☆☆☆☆==
+180=come true==B2==☆☆☆☆☆==
+181=come up with sth==B1==☆☆☆☆☆==
+182=compared with sth==B1==☆☆☆☆☆==
+183=concentrate on sth==B1==☆☆☆☆☆==
+184=concerned about sth==B2==☆☆☆☆☆==
+185=concerned with sth==B2==☆☆☆☆☆==
+186=confidence in sb/sth==B2==☆☆☆☆☆==
+187=connected to sth==A2==☆☆☆☆☆==
+188=connected with sb/sth==A2==☆☆☆☆☆==
+189=consist of sb/sth==B1==☆☆☆☆☆==
+190=consistent with sth==C1==☆☆☆☆☆==
+191=contribute to sth==B2==☆☆☆☆☆==
+192=control over sb/sth==B2==☆☆☆☆☆==
+193=cope with sth==B2==☆☆☆☆☆==
+194=credit card==A2==☆☆☆☆☆==
+195=deal with sb==A2==☆☆☆☆☆==
+196=deal with sth==A2==☆☆☆☆☆==
+197=decide on sth==B1==☆☆☆☆☆==
+198=decline in sth==B2==☆☆☆☆☆==
+199=dedicated to sth==C1==☆☆☆☆☆==
+200=depend on sb/sth==A2==☆☆☆☆☆==
+201=depend on sth==A2==☆☆☆☆☆==
+202=dependent on sb/sth==B2==☆☆☆☆☆==
+203=depending on==B1==☆☆☆☆☆==
+204=deprive sb/sth of sth==C1==☆☆☆☆☆==
+205=despite the fact that…==B2==☆☆☆☆☆==
+206=developing countries==B1==☆☆☆☆☆==
+207=differences between A and B==A1==☆☆☆☆☆==
+208=difficult for sb==A1==☆☆☆☆☆==
+209=dispose of sb/sth==C1==☆☆☆☆☆==
+210=do well==A2==☆☆☆☆☆==
+211=draw attention to sb/sth==B2==☆☆☆☆☆==
+212=due to sb/sth==B1==☆☆☆☆☆==
+213=each one==A2==☆☆☆☆☆==
+214=each other==A1==☆☆☆☆☆==
+215=economic growth==B1==☆☆☆☆☆==
+216=end in sth==A1==☆☆☆☆☆==
+217=end up==B1==☆☆☆☆☆==
+218=end with sth==A2==☆☆☆☆☆==
+219=engage in sth==B2==☆☆☆☆☆==
+220=engaged in sth==B2==☆☆☆☆☆==
+221=even if==B1==☆☆☆☆☆==
+222=even more…==A2==☆☆☆☆☆==
+223=even though==B1==☆☆☆☆☆==
+224=ever since==B2==☆☆☆☆☆==
+225=every day==A1==☆☆☆☆☆==
+226=everyone else==A2==☆☆☆☆☆==
+227=exactly the same==B1==☆☆☆☆☆==
+228=except for==A2==☆☆☆☆☆==
+229=excuse me==A1==☆☆☆☆☆==
+230=experience in sth==B1==☆☆☆☆☆==
+231=exposure to sth==B2==☆☆☆☆☆==
+232=fail to do sth==B1==☆☆☆☆☆==
+233=fall asleep==B1==☆☆☆☆☆==
+234=fall in love==A2==☆☆☆☆☆==
+235=fall off==A2==☆☆☆☆☆==
+236=family member==A1==☆☆☆☆☆==
+237=far away==A2==☆☆☆☆☆==
+238=far from sth==B2==☆☆☆☆☆==
+239=far more==B1==☆☆☆☆☆==
+240=far too==B1==☆☆☆☆☆==
+241=fed up==B1==☆☆☆☆☆==
+242=feel good==A2==☆☆☆☆☆==
+243=feel like sth==A2==☆☆☆☆☆==
+244=figure sb/sth out==B2==☆☆☆☆☆==
+245=fill sth in==A2==☆☆☆☆☆==
+246=find it difficult to do sth==A2==☆☆☆☆☆==
+247=find out==A1==☆☆☆☆☆==
+248=find yourself doing sth==B2==☆☆☆☆☆==
+249=first of all==A2==☆☆☆☆☆==
+250=focus on sb/sth==A2==☆☆☆☆☆==
+251=follow sth up==C1==☆☆☆☆☆==
+252=followed by sb/sth==A2==☆☆☆☆☆==
+253=for a long time==A1==☆☆☆☆☆==
+254=for a moment==A1==☆☆☆☆☆==
+255=for a while==B1==☆☆☆☆☆==
+256=for example==A1==☆☆☆☆☆==
+257=for free==B1==☆☆☆☆☆==
+258=for instance==B1==☆☆☆☆☆==
+259=for life==B1==☆☆☆☆☆==
+260=for long==B1==☆☆☆☆☆==
+261=for lunch==A1==☆☆☆☆☆==
+262=for many years==A1==☆☆☆☆☆==
+263=for some time==B1==☆☆☆☆☆==
+264=for that matter==C1==☆☆☆☆☆==
+265=for the benefit of sb==C1==☆☆☆☆☆==
+266=for the first time==A1==☆☆☆☆☆==
+267=for the rest of sth==A2==☆☆☆☆☆==
+268=for the sake of sb/sth==C1==☆☆☆☆☆==
+269=for this reason==A2==☆☆☆☆☆==
+270=get away with sth==C1==☆☆☆☆☆==
+271=get back==A2==☆☆☆☆☆==
+272=get better==A2==☆☆☆☆☆==
+273=get home==A1==☆☆☆☆☆==
+274=get in==B2==☆☆☆☆☆==
+275=get lost==A2==☆☆☆☆☆==
+276=get married==A1==☆☆☆☆☆==
+277=get off==A1==☆☆☆☆☆==
+278=get on==A1==☆☆☆☆☆==
+279=get on with sb==B1==☆☆☆☆☆==
+280=get out==A2==☆☆☆☆☆==
+281=get over sb/sth==B2==☆☆☆☆☆==
+282=get ready==A1==☆☆☆☆☆==
+283=get rid of sb/sth==B2==☆☆☆☆☆==
+284=get there==A1==☆☆☆☆☆==
+285=get to know sb==B1==☆☆☆☆☆==
+286=get to…==A1==☆☆☆☆☆==
+287=get up==A1==☆☆☆☆☆==
+288=get used to sth==B1==☆☆☆☆☆==
+289=give sth up==A2==☆☆☆☆☆==
+290=give up==A2==☆☆☆☆☆==
+291=given that…==C1==☆☆☆☆☆==
+292=global warming==B1==☆☆☆☆☆==
+293=go ahead==B1==☆☆☆☆☆==
+294=go and…==A2==☆☆☆☆☆==
+295=go away==A2==☆☆☆☆☆==
+296=go back==A1==☆☆☆☆☆==
+297=go down==A2==☆☆☆☆☆==
+298=go down sth==A2==☆☆☆☆☆==
+299=go for sth==A2==☆☆☆☆☆==
+300=go home==A1==☆☆☆☆☆==
+301=go into sth==A1==☆☆☆☆☆==
+302=go off==B2==☆☆☆☆☆==
+303=go on to do sth==B2==☆☆☆☆☆==
+304=go out==A1==☆☆☆☆☆==
+305=go through sth==B2==☆☆☆☆☆==
+306=go to bed==A1==☆☆☆☆☆==
+307=go to school==A1==☆☆☆☆☆==
+308=go to work==A1==☆☆☆☆☆==
+309=go up==A2==☆☆☆☆☆==
+310=go wrong==B1==☆☆☆☆☆==
+311=good at sth==A1==☆☆☆☆☆==
+312=good for sb/sth==A1==☆☆☆☆☆==
+313=good luck==A2==☆☆☆☆☆==
+314=Good morning==A1==☆☆☆☆☆==
+315=good news==A1==☆☆☆☆☆==
+316=good thing==A1==☆☆☆☆☆==
+317=grow up==A1==☆☆☆☆☆==
+318=growth in sth==B1==☆☆☆☆☆==
+319=Guess what…==A1==☆☆☆☆☆==
+320=had better==B2==☆☆☆☆☆==
+321=half an hour==A1==☆☆☆☆☆==
+322=hang on==B2==☆☆☆☆☆==
+323=happen to sb/sth==A2==☆☆☆☆☆==
+324=happy with sb/sth==A2==☆☆☆☆☆==
+325=hard work==A1==☆☆☆☆☆==
+326=have a look==A2==☆☆☆☆☆==
+327=have fun==A1==☆☆☆☆☆==
+328=have got==A1==☆☆☆☆☆==
+329=have got to==A2==☆☆☆☆☆==
+330=have no idea==B1==☆☆☆☆☆==
+331=have nothing to do with sb/sth==C1==☆☆☆☆☆==
+332=have sb/sth in mind==C1==☆☆☆☆☆==
+333=have sth in common==B1==☆☆☆☆☆==
+334=have time==A1==☆☆☆☆☆==
+335=Have you ever…?==A2==☆☆☆☆☆==
+336=he or she==A1==☆☆☆☆☆==
+337=health problems==A2==☆☆☆☆☆==
+338=hear about sb/sth==A2==☆☆☆☆☆==
+339=hear of sb/sth==B1==☆☆☆☆☆==
+340=heart disease==B1==☆☆☆☆☆==
+341=high school==A1==☆☆☆☆☆==
+342=high street==B1==☆☆☆☆☆==
+343=higher education==B1==☆☆☆☆☆==
+344=his or her==A1==☆☆☆☆☆==
+345=How about…?==A1==☆☆☆☆☆==
+346=How are you?==A1==☆☆☆☆☆==
+347=How long…?==A1==☆☆☆☆☆==
+348=How many…?==A1==☆☆☆☆☆==
+349=How much…?==A1==☆☆☆☆☆==
+350=How often…?==A1==☆☆☆☆☆==
+351=human being==B2==☆☆☆☆☆==
+352=human rights==B2==☆☆☆☆☆==
+353=I don't care==A2==☆☆☆☆☆==
+354=I guess==A1==☆☆☆☆☆==
+355=I have to say…==B2==☆☆☆☆☆==
+356=I mean==A2==☆☆☆☆☆==
+357=I think so==A2==☆☆☆☆☆==
+358=I wonder if…==B1==☆☆☆☆☆==
+359=I would say…==B2==☆☆☆☆☆==
+360=I'm afraid…==A2==☆☆☆☆☆==
+361=I'm sorry==A1==☆☆☆☆☆==
+362=If I were you==B1==☆☆☆☆☆==
+363=if necessary==A2==☆☆☆☆☆==
+364=if only…==B2==☆☆☆☆☆==
+365=if you want to==A2==☆☆☆☆☆==
+366=important for sb/sth==A1==☆☆☆☆☆==
+367=in a position to do sth==C1==☆☆☆☆☆==
+368=in a way that…==B1==☆☆☆☆☆==
+369=in accordance with sth==C1==☆☆☆☆☆==
+370=in action==B2==☆☆☆☆☆==
+371=in addition==B1==☆☆☆☆☆==
+372=in advance==B2==☆☆☆☆☆==
+373=in an attempt to do sth==B2==☆☆☆☆☆==
+374=in any case==C1==☆☆☆☆☆==
+375=in April==A1==☆☆☆☆☆==
+376=in bed==A1==☆☆☆☆☆==
+377=in business==A2==☆☆☆☆☆==
+378=in case…==B1==☆☆☆☆☆==
+379=in charge of sb/sth==B1==☆☆☆☆☆==
+380=in class==A1==☆☆☆☆☆==
+381=in conjunction with sb/sth==C1==☆☆☆☆☆==
+382=in connection with sb/sth==C1==☆☆☆☆☆==
+383=in contrast==B1==☆☆☆☆☆==
+384=in danger==A2==☆☆☆☆☆==
+385=in effect==C1==☆☆☆☆☆==
+386=in fact==A1==☆☆☆☆☆==
+387=in favour of sb/sth==B1==☆☆☆☆☆==
+388=in front of==A1==☆☆☆☆☆==
+389=in full==C1==☆☆☆☆☆==
+390=in general==B1==☆☆☆☆☆==
+391=in history==A2==☆☆☆☆☆==
+392=in hospital==A2==☆☆☆☆☆==
+393=in line with sth==C1==☆☆☆☆☆==
+394=in love==A2==☆☆☆☆☆==
+395=in my opinion==A1==☆☆☆☆☆==
+396=in order of sth==B1==☆☆☆☆☆==
+397=in order to do sth==B1==☆☆☆☆☆==
+398=in other words==B1==☆☆☆☆☆==
+399=in part==B2==☆☆☆☆☆==
+400=in particular==B1==☆☆☆☆☆==
+401=in place==B2==☆☆☆☆☆==
+402=in practice==C1==☆☆☆☆☆==
+403=in prison==A2==☆☆☆☆☆==
+404=in public==B1==☆☆☆☆☆==
+405=in recent years==B1==☆☆☆☆☆==
+406=in relation to sb/sth==B2==☆☆☆☆☆==
+407=in respect of sth==C1==☆☆☆☆☆==
+408=in response to sth==B1==☆☆☆☆☆==
+409=in school==A1==☆☆☆☆☆==
+410=in some cases==A2==☆☆☆☆☆==
+411=in space==A1==☆☆☆☆☆==
+412=in spite of sth==B2==☆☆☆☆☆==
+413=in such a way (that)…==C1==☆☆☆☆☆==
+414=in summer==A1==☆☆☆☆☆==
+415=in terms of sth==B1==☆☆☆☆☆==
+416=in the absence of sb/sth==C1==☆☆☆☆☆==
+417=in the air==A2==☆☆☆☆☆==
+418=in the case of sth==B1==☆☆☆☆☆==
+419=in the centre==A1==☆☆☆☆☆==
+420=in the country==A1==☆☆☆☆☆==
+421=in the course of…==C1==☆☆☆☆☆==
+422=in the end==A2==☆☆☆☆☆==
+423=in the event of sth==C1==☆☆☆☆☆==
+424=in the face of sth==C1==☆☆☆☆☆==
+425=in the first place==B2==☆☆☆☆☆==
+426=in the form of sb/sth==B1==☆☆☆☆☆==
+427=in the future==A1==☆☆☆☆☆==
+428=in the hands of sb==C1==☆☆☆☆☆==
+429=in the light of sth==C1==☆☆☆☆☆==
+430=in the meantime==C1==☆☆☆☆☆==
+431=in the middle==A2==☆☆☆☆☆==
+432=in the midst of sth==C1==☆☆☆☆☆==
+433=in the morning==A1==☆☆☆☆☆==
+434=in the near future==B2==☆☆☆☆☆==
+435=in the north==A1==☆☆☆☆☆==
+436=in the past==A1==☆☆☆☆☆==
+437=in the presence of sb==C1==☆☆☆☆☆==
+438=in the same way==A2==☆☆☆☆☆==
+439=in the street==A1==☆☆☆☆☆==
+440=in the summer==A1==☆☆☆☆☆==
+441=in the wake of sb/sth==C1==☆☆☆☆☆==
+442=in the way (that)…==B1==☆☆☆☆☆==
+443=in this case==B1==☆☆☆☆☆==
+444=in this way==A2==☆☆☆☆☆==
+445=in time==B1==☆☆☆☆☆==
+446=in touch==B1==☆☆☆☆☆==
+447=in town==A1==☆☆☆☆☆==
+448=in turn==B2==☆☆☆☆☆==
+449=instead of==A2==☆☆☆☆☆==
+450=investment in sth==B2==☆☆☆☆☆==
+451=involvement in sth==C1==☆☆☆☆☆==
+452=it depends==A2==☆☆☆☆☆==
+453=It is important to do sth==A1==☆☆☆☆☆==
+454=It takes …==A1==☆☆☆☆☆==
+455=kind of sb/sth==A1==☆☆☆☆☆==
+456=know how==A1==☆☆☆☆☆==
+457=last time==A1==☆☆☆☆☆==
+458=last year==A1==☆☆☆☆☆==
+459=lead to sth==A2==☆☆☆☆☆==
+460=learn how to do sth==A1==☆☆☆☆☆==
+461=leave sb/sth out==B1==☆☆☆☆☆==
+462=less than…==A2==☆☆☆☆☆==
+463=let alone==C1==☆☆☆☆☆==
+464=let me know==A2==☆☆☆☆☆==
+465=Let me…==A2==☆☆☆☆☆==
+466=likely to do sth==B1==☆☆☆☆☆==
+467=listen to sb/sth==A1==☆☆☆☆☆==
+468=little more than…==C1==☆☆☆☆☆==
+469=live on sth==C1==☆☆☆☆☆==
+470=live with sb==A1==☆☆☆☆☆==
+471=living room==A1==☆☆☆☆☆==
+472=loads of sb/sth==B2==☆☆☆☆☆==
+473=look after sb/sth/yourself==A2==☆☆☆☆☆==
+474=look at sb/sth==A1==☆☆☆☆☆==
+475=look back at sth==A2==☆☆☆☆☆==
+476=look for sb/sth==A1==☆☆☆☆☆==
+477=look forward to sth==B1==☆☆☆☆☆==
+478=look like sb/sth==A1==☆☆☆☆☆==
+479=look out==B1==☆☆☆☆☆==
+480=look sth up==A2==☆☆☆☆☆==
+481=lots of…==A1==☆☆☆☆☆==
+482=make a difference==B1==☆☆☆☆☆==
+483=make a mistake==A2==☆☆☆☆☆==
+484=make money==A2==☆☆☆☆☆==
+485=make sense==A2==☆☆☆☆☆==
+486=make sth up==B1==☆☆☆☆☆==
+487=make sure==A2==☆☆☆☆☆==
+488=manage to do sth==B1==☆☆☆☆☆==
+489=may well==C1==☆☆☆☆☆==
+490=mean to do sth==B1==☆☆☆☆☆==
+491=mental health==B2==☆☆☆☆☆==
+492=millions of…==A1==☆☆☆☆☆==
+493=mobile phone==A1==☆☆☆☆☆==
+494=more and more==B1==☆☆☆☆☆==
+495=more or less==B2==☆☆☆☆☆==
+496=more than…==A1==☆☆☆☆☆==
+497=move on==B1==☆☆☆☆☆==
+498=much better==A2==☆☆☆☆☆==
+499=next time==A1==☆☆☆☆☆==
+500=next year==A1==☆☆☆☆☆==
+501=no doubt==B2==☆☆☆☆☆==
+502=no longer==B1==☆☆☆☆☆==
+503=no matter…==B2==☆☆☆☆☆==
+504=no more than…==B1==☆☆☆☆☆==
+505=No problem==A1==☆☆☆☆☆==
+506=no way==A2==☆☆☆☆☆==
+507=not at all==A2==☆☆☆☆☆==
+508=not even==B1==☆☆☆☆☆==
+509=not necessarily==B1==☆☆☆☆☆==
+510=not only==B1==☆☆☆☆☆==
+511=not to mention==C1==☆☆☆☆☆==
+512=nothing but==B2==☆☆☆☆☆==
+513=nothing like==C1==☆☆☆☆☆==
+514=of course==A1==☆☆☆☆☆==
+515=Oh dear==A2==☆☆☆☆☆==
+516=Oh no!==A1==☆☆☆☆☆==
+517=Oh well==A2==☆☆☆☆☆==
+518=Oh yes==A1==☆☆☆☆☆==
+519=old friend==A2==☆☆☆☆☆==
+520=on a regular basis==B1==☆☆☆☆☆==
+521=on behalf of sb==C1==☆☆☆☆☆==
+522=on board==B2==☆☆☆☆☆==
+523=on earth==A2==☆☆☆☆☆==
+524=on holiday==A1==☆☆☆☆☆==
+525=on Monday==A1==☆☆☆☆☆==
+526=on my own==B1==☆☆☆☆☆==
+527=on television==A1==☆☆☆☆☆==
+528=on the basis of sth==B2==☆☆☆☆☆==
+529=on the beach==A1==☆☆☆☆☆==
+530=on the floor==A1==☆☆☆☆☆==
+531=on the ground==A2==☆☆☆☆☆==
+532=on the internet==A1==☆☆☆☆☆==
+533=on the left==A1==☆☆☆☆☆==
+534=on the one hand==B2==☆☆☆☆☆==
+535=on the other hand==B1==☆☆☆☆☆==
+536=on the other side==A2==☆☆☆☆☆==
+537=on the part of sb==C1==☆☆☆☆☆==
+538=on the phone==A1==☆☆☆☆☆==
+539=on the street==B1==☆☆☆☆☆==
+540=on the wall==A2==☆☆☆☆☆==
+541=on the way==B1==☆☆☆☆☆==
+542=on time==A2==☆☆☆☆☆==
+543=on top of sth/sb==A2==☆☆☆☆☆==
+544=on TV==A1==☆☆☆☆☆==
+545=once a…==A1==☆☆☆☆☆==
+546=once again==B2==☆☆☆☆☆==
+547=one another==B2==☆☆☆☆☆==
+548=one day==A1==☆☆☆☆☆==
+549=one or two==A2==☆☆☆☆☆==
+550=opposed to sth==B2==☆☆☆☆☆==
+551=or so==B2==☆☆☆☆☆==
+552=or something==B1==☆☆☆☆☆==
+553=or two==B1==☆☆☆☆☆==
+554=ordinary people==A2==☆☆☆☆☆==
+555=other than==B2==☆☆☆☆☆==
+556=ought to==B1==☆☆☆☆☆==
+557=out of sth==A1==☆☆☆☆☆==
+558=out there==B1==☆☆☆☆☆==
+559=over the course of…==C1==☆☆☆☆☆==
+560=over the years==B1==☆☆☆☆☆==
+561=over there==A1==☆☆☆☆☆==
+562=over time==B1==☆☆☆☆☆==
+563=participate in sth==B1==☆☆☆☆☆==
+564=pay attention==A2==☆☆☆☆☆==
+565=pay for sth==A1==☆☆☆☆☆==
+566=per hour==A2==☆☆☆☆☆==
+567=phone call==A1==☆☆☆☆☆==
+568=phone number==A1==☆☆☆☆☆==
+569=pick sb/sth up==A2==☆☆☆☆☆==
+570=plan for sth==A1==☆☆☆☆☆==
+571=play with sb/sth==A1==☆☆☆☆☆==
+572=point of view==B1==☆☆☆☆☆==
+573=point out==B1==☆☆☆☆☆==
+574=police officer==A2==☆☆☆☆☆==
+575=police station==A2==☆☆☆☆☆==
+576=post office==A1==☆☆☆☆☆==
+577=potential for sth==B2==☆☆☆☆☆==
+578=prepared to do sth==B1==☆☆☆☆☆==
+579=pretty good==A1==☆☆☆☆☆==
+580=pretty much==B2==☆☆☆☆☆==
+581=primary school==B1==☆☆☆☆☆==
+582=prime minister==B1==☆☆☆☆☆==
+583=prior to==B2==☆☆☆☆☆==
+584=prove to be sth==B2==☆☆☆☆☆==
+585=public transport==A2==☆☆☆☆☆==
+586=put it==C1==☆☆☆☆☆==
+587=put sth forward==B2==☆☆☆☆☆==
+588=put sth on==A2==☆☆☆☆☆==
+589=put sth together==B2==☆☆☆☆☆==
+590=put sth up==B1==☆☆☆☆☆==
+591=quality of life==B2==☆☆☆☆☆==
+592=quite a lot==A2==☆☆☆☆☆==
+593=quite a…==B1==☆☆☆☆☆==
+594=raise money==B1==☆☆☆☆☆==
+595=ranging from==B2==☆☆☆☆☆==
+596=rather than==B1==☆☆☆☆☆==
+597=reaction to sth==B1==☆☆☆☆☆==
+598=really enjoy==A1==☆☆☆☆☆==
+599=really good==A1==☆☆☆☆☆==
+600=really like==A1==☆☆☆☆☆==
+601=reasons why==A2==☆☆☆☆☆==
+602=refer to sb/sth==A2==☆☆☆☆☆==
+603=regarded as sth==B2==☆☆☆☆☆==
+604=relate to sth/sb==B1==☆☆☆☆☆==
+605=related to sth/sb==B1==☆☆☆☆☆==
+606=relevant to sb/sth==B2==☆☆☆☆☆==
+607=rely on sb/sth==B2==☆☆☆☆☆==
+608=report on sth==A2==☆☆☆☆☆==
+609=respect for sb/sth==B1==☆☆☆☆☆==
+610=respond to sth/sb==A2==☆☆☆☆☆==
+611=result in sth==B1==☆☆☆☆☆==
+612=right now==A1==☆☆☆☆☆==
+613=rise in sth==B1==☆☆☆☆☆==
+614=role model==B2==☆☆☆☆☆==
+615=run out==B1==☆☆☆☆☆==
+616=run out of sth==B1==☆☆☆☆☆==
+617=save money==A2==☆☆☆☆☆==
+618=science fiction==A2==☆☆☆☆☆==
+619=search engine==B1==☆☆☆☆☆==
+620=search for sth/sb==A2==☆☆☆☆☆==
+621=secondary school==B1==☆☆☆☆☆==
+622=See you==A1==☆☆☆☆☆==
+623=seek to do sth==C1==☆☆☆☆☆==
+624=set out==B2==☆☆☆☆☆==
+625=set sth up==B1==☆☆☆☆☆==
+626=set to do sth==C1==☆☆☆☆☆==
+627=short of sth==B2==☆☆☆☆☆==
+628=sit down==A1==☆☆☆☆☆==
+629=slow down==B1==☆☆☆☆☆==
+630=so as to do sth==B2==☆☆☆☆☆==
+631=so far==B1==☆☆☆☆☆==
+632=so that…==A2==☆☆☆☆☆==
+633=solution to sth==A2==☆☆☆☆☆==
+634=some kind of…==B1==☆☆☆☆☆==
+635=someone else==A1==☆☆☆☆☆==
+636=something like…==B2==☆☆☆☆☆==
+637=sort of sth==A2==☆☆☆☆☆==
+638=sort sb/sth/yourself out==B2==☆☆☆☆☆==
+639=sound like sb/sth==A2==☆☆☆☆☆==
+640=speak to sb==A1==☆☆☆☆☆==
+641=spend time==A1==☆☆☆☆☆==
+642=stand up==A1==☆☆☆☆☆==
+643=start with sb/sth==A2==☆☆☆☆☆==
+644=stay in==A1==☆☆☆☆☆==
+645=stick to sth==B2==☆☆☆☆☆==
+646=subject to sth==B2==☆☆☆☆☆==
+647=succeed in doing sth==B1==☆☆☆☆☆==
+648=such a/an…==A2==☆☆☆☆☆==
+649=such as==A1==☆☆☆☆☆==
+650=suffer from sth==B1==☆☆☆☆☆==
+651=sum up==B2==☆☆☆☆☆==
+652=sure to do sth==B1==☆☆☆☆☆==
+653=swimming pool==A1==☆☆☆☆☆==
+654=take advantage of sb/sth==B2==☆☆☆☆☆==
+655=take care of sb/sth/yourself==A2==☆☆☆☆☆==
+656=take off==A2==☆☆☆☆☆==
+657=take over==B2==☆☆☆☆☆==
+658=take part==A2==☆☆☆☆☆==
+659=take place==A2==☆☆☆☆☆==
+660=take sth into account==B2==☆☆☆☆☆==
+661=take sth off==A2==☆☆☆☆☆==
+662=take sth up==B1==☆☆☆☆☆==
+663=take sth/sb on==B1==☆☆☆☆☆==
+664=take up sth==B1==☆☆☆☆☆==
+665=talk about sb/sth==A1==☆☆☆☆☆==
+666=tell the truth==B1==☆☆☆☆☆==
+667=tend to do sth==B1==☆☆☆☆☆==
+668=Thank you==A1==☆☆☆☆☆==
+669=thanks to sb/sth==B1==☆☆☆☆☆==
+670=that day==A1==☆☆☆☆☆==
+671=that is==B2==☆☆☆☆☆==
+672=that's it==B1==☆☆☆☆☆==
+673=the 20th century==A1==☆☆☆☆☆==
+674=the best thing==A2==☆☆☆☆☆==
+675=the case==B1==☆☆☆☆☆==
+676=the extent to which…==C1==☆☆☆☆☆==
+677=the fact that…==B1==☆☆☆☆☆==
+678=the first thing==A2==☆☆☆☆☆==
+679=the following…==A2==☆☆☆☆☆==
+680=the important thing==A2==☆☆☆☆☆==
+681=the next day==A1==☆☆☆☆☆==
+682=the other side of sth==A2==☆☆☆☆☆==
+683=the rest of sth==A2==☆☆☆☆☆==
+684=the vast majority of sth==B2==☆☆☆☆☆==
+685=there is==A1==☆☆☆☆☆==
+686=these days==A2==☆☆☆☆☆==
+687=they say…==A2==☆☆☆☆☆==
+688=think about sb/sth==A1==☆☆☆☆☆==
+689=think of sb/sth==A1==☆☆☆☆☆==
+690=This is…==A1==☆☆☆☆☆==
+691=this kind of…==A1==☆☆☆☆☆==
+692=this morning==A1==☆☆☆☆☆==
+693=this time==A1==☆☆☆☆☆==
+694=this year==A1==☆☆☆☆☆==
+695=those who…==B1==☆☆☆☆☆==
+696=thousands of…==A1==☆☆☆☆☆==
+697=throw sth away==A2==☆☆☆☆☆==
+698=to date==C1==☆☆☆☆☆==
+699=to do with sb/sth==B1==☆☆☆☆☆==
+700=together with==B1==☆☆☆☆☆==
+701=too bad==B1==☆☆☆☆☆==
+702=too long==A1==☆☆☆☆☆==
+703=too much==A1==☆☆☆☆☆==
+704=town centre==A1==☆☆☆☆☆==
+705=try and…==B1==☆☆☆☆☆==
+706=turn into sth==B2==☆☆☆☆☆==
+707=turn out==B1==☆☆☆☆☆==
+708=turn sth off==A2==☆☆☆☆☆==
+709=turn sth on==A2==☆☆☆☆☆==
+710=turn sth up==B1==☆☆☆☆☆==
+711=TV show==A1==☆☆☆☆☆==
+712=unable to do sth==B1==☆☆☆☆☆==
+713=up against sth==C1==☆☆☆☆☆==
+714=up and down==A2==☆☆☆☆☆==
+715=up to sb==B2==☆☆☆☆☆==
+716=up to sth==B1==☆☆☆☆☆==
+717=wait for sb/sth==A1==☆☆☆☆☆==
+718=wake up==A1==☆☆☆☆☆==
+719=way of life==B1==☆☆☆☆☆==
+720=welcome to sth==A1==☆☆☆☆☆==
+721=well known==B1==☆☆☆☆☆==
+722=What about…?==A1==☆☆☆☆☆==
+723=when it comes to sth==B2==☆☆☆☆☆==
+724=whether or not…==B2==☆☆☆☆☆==
+725=Why not…?==A2==☆☆☆☆☆==
+726=with regard to sb/sth==C1==☆☆☆☆☆==
+727=with respect to sth==C1==☆☆☆☆☆==
+728=with the exception of sb/sth==C1==☆☆☆☆☆==
+729=work as sth==A1==☆☆☆☆☆==
+730=work for sb/sth==A1==☆☆☆☆☆==
+731=work hard==A1==☆☆☆☆☆==
+732=work on sth==B1==☆☆☆☆☆==
+733=work out==A2==☆☆☆☆☆==
+734=work sth out==B1==☆☆☆☆☆==
+735=work together==A1==☆☆☆☆☆==
+736=work with sb==A1==☆☆☆☆☆==
+737=worried about sb/sth==A2==☆☆☆☆☆==
+738=would like==A1==☆☆☆☆☆==
+739=would love to do sth==A2==☆☆☆☆☆==
+740=would rather…==B2==☆☆☆☆☆==
+741=Would you like…?==A1==☆☆☆☆☆==
+742=write sth down==A2==☆☆☆☆☆==
+743=wrong with sb/sth==B1==☆☆☆☆☆==
+744=X hours a day==A1==☆☆☆☆☆==
+745=X times a…==A1==☆☆☆☆☆==
+746=X years ago==A1==☆☆☆☆☆==
+747=X years later==A1==☆☆☆☆☆==
+748=X years old==A1==☆☆☆☆☆==
+749=you see==B1==☆☆☆☆☆==
+750=You're welcome==A1==☆☆☆☆☆==

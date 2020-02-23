@@ -1,0 +1,267 @@
+NUMBER=WORD=PRONUNCIATION=PART_OF_SPEECH=MEANING=STAR=DATE=MEMO
+1=activate==verb==☆☆☆☆☆==
+2=acute==adjective==☆☆☆☆☆==
+3=adjacent==adjective==☆☆☆☆☆==
+4=agricultural==adjective==☆☆☆☆☆==
+5=agriculture==noun==☆☆☆☆☆==
+6=antibody==noun==☆☆☆☆☆==
+7=array==noun==☆☆☆☆☆==
+8=assess==verb==☆☆☆☆☆==
+9=assessment==noun==☆☆☆☆☆==
+10=assumption==noun==☆☆☆☆☆==
+11=atomic==adjective==☆☆☆☆☆==
+12=attribute==verb, noun==☆☆☆☆☆==
+13=axis==noun==☆☆☆☆☆==
+14=beam==noun==☆☆☆☆☆==
+15=binary==adjective==☆☆☆☆☆==
+16=bind==verb==☆☆☆☆☆==
+17=biological==adjective==☆☆☆☆☆==
+18=bond==noun, verb==☆☆☆☆☆==
+19=boundary==noun==☆☆☆☆☆==
+20=calcium==noun==☆☆☆☆☆==
+21=capability==noun==☆☆☆☆☆==
+22=carbon==noun==☆☆☆☆☆==
+23=chromosome==noun==☆☆☆☆☆==
+24=chronic==adjective==☆☆☆☆☆==
+25=circuit==noun==☆☆☆☆☆==
+26=classification==noun==☆☆☆☆☆==
+27=classify==verb==☆☆☆☆☆==
+28=clinic==noun==☆☆☆☆☆==
+29=clinical==adjective==☆☆☆☆☆==
+30=clone==noun, verb==☆☆☆☆☆==
+31=cloning==noun==☆☆☆☆☆==
+32=cluster==noun, verb==☆☆☆☆☆==
+33=component==noun, adjective==☆☆☆☆☆==
+34=composition==noun==☆☆☆☆☆==
+35=compound==noun, adjective==☆☆☆☆☆==
+36=comprise==verb==☆☆☆☆☆==
+37=compute==verb==☆☆☆☆☆==
+38=computing==noun==☆☆☆☆☆==
+39=consequently==adverb==☆☆☆☆☆==
+40=conservation==noun==☆☆☆☆☆==
+41=consistent==adjective==☆☆☆☆☆==
+42=constraint==noun==☆☆☆☆☆==
+43=continental==adjective==☆☆☆☆☆==
+44=coordinate (BrE also co-ordinate)==verb, noun==☆☆☆☆☆==
+45=copper==noun==☆☆☆☆☆==
+46=correlation==noun==☆☆☆☆☆==
+47=correspond==verb==☆☆☆☆☆==
+48=corresponding==adjective==☆☆☆☆☆==
+49=crystal==noun==☆☆☆☆☆==
+50=database==noun==☆☆☆☆☆==
+51=density==noun==☆☆☆☆☆==
+52=dependent==adjective==☆☆☆☆☆==
+53=detect==verb==☆☆☆☆☆==
+54=diagnosis==noun==☆☆☆☆☆==
+55=diameter==noun==☆☆☆☆☆==
+56=differ==verb==☆☆☆☆☆==
+57=digital==adjective==☆☆☆☆☆==
+58=dimension==noun==☆☆☆☆☆==
+59=discharge==verb, noun==☆☆☆☆☆==
+60=disorder==noun==☆☆☆☆☆==
+61=distinct==adjective==☆☆☆☆☆==
+62=DNA==noun==☆☆☆☆☆==
+63=domain==noun==☆☆☆☆☆==
+64=dose==noun==☆☆☆☆☆==
+65=efficiency==noun==☆☆☆☆☆==
+66=electron==noun==☆☆☆☆☆==
+67=eliminate==verb==☆☆☆☆☆==
+68=embryo==noun==☆☆☆☆☆==
+69=emission==noun==☆☆☆☆☆==
+70=enhance==noun==☆☆☆☆☆==
+71=enhanced==adjective==☆☆☆☆☆==
+72=enzyme==noun==☆☆☆☆☆==
+73=equation==noun==☆☆☆☆☆==
+74=equilibrium==noun==☆☆☆☆☆==
+75=et al.==abbr.==☆☆☆☆☆==
+76=evaluate==verb==☆☆☆☆☆==
+77=evaluation==noun==☆☆☆☆☆==
+78=evolution==noun==☆☆☆☆☆==
+79=evolutionary==adjective==☆☆☆☆☆==
+80=evolve==verb==☆☆☆☆☆==
+81=exceed==verb==☆☆☆☆☆==
+82=excess==noun, adjective==☆☆☆☆☆==
+83=expansion==noun==☆☆☆☆☆==
+84=experimental==adjective==☆☆☆☆☆==
+85=exploit==verb==☆☆☆☆☆==
+86=exploration==noun==☆☆☆☆☆==
+87=exposure==noun==☆☆☆☆☆==
+88=external==adjective==☆☆☆☆☆==
+89=extract==noun, verb==☆☆☆☆☆==
+90=fibre (BrE) (NamE fiber)==noun==☆☆☆☆☆==
+91=filter==noun, verb==☆☆☆☆☆==
+92=finding==noun==☆☆☆☆☆==
+93=fluid==noun, adjective==☆☆☆☆☆==
+94=formation==noun==☆☆☆☆☆==
+95=fossil==noun==☆☆☆☆☆==
+96=fraction==noun==☆☆☆☆☆==
+97=fragment==noun==☆☆☆☆☆==
+98=framework==noun==☆☆☆☆☆==
+99=frequency==noun==☆☆☆☆☆==
+100=functional==adjective==☆☆☆☆☆==
+101=furthermore==adverb==☆☆☆☆☆==
+102=fusion==noun==☆☆☆☆☆==
+103=galaxy==noun==☆☆☆☆☆==
+104=gene==noun==☆☆☆☆☆==
+105=genetic==adjective==☆☆☆☆☆==
+106=genetically==adverb==☆☆☆☆☆==
+107=genetics==noun==☆☆☆☆☆==
+108=geological==adjective==☆☆☆☆☆==
+109=geology==noun==☆☆☆☆☆==
+110=graph==noun==☆☆☆☆☆==
+111=gravitational==adjective==☆☆☆☆☆==
+112=gravity==noun==☆☆☆☆☆==
+113=habitat==noun==☆☆☆☆☆==
+114=hydrogen==noun==☆☆☆☆☆==
+115=hypothesis==noun==☆☆☆☆☆==
+116=identical==adjective==☆☆☆☆☆==
+117=identification==noun==☆☆☆☆☆==
+118=incidence==noun==☆☆☆☆☆==
+119=incorporate==verb==☆☆☆☆☆==
+120=induce==verb==☆☆☆☆☆==
+121=infant==noun, adjective==☆☆☆☆☆==
+122=input==noun==☆☆☆☆☆==
+123=integrate==verb==☆☆☆☆☆==
+124=integrated==adjective==☆☆☆☆☆==
+125=intense==adjective==☆☆☆☆☆==
+126=intensity==noun==☆☆☆☆☆==
+127=interaction==noun==☆☆☆☆☆==
+128=intermediate==adjective==☆☆☆☆☆==
+129=intervention==noun==☆☆☆☆☆==
+130=ion==noun==☆☆☆☆☆==
+131=isolate==verb==☆☆☆☆☆==
+132=isolated==adjective==☆☆☆☆☆==
+133=journal==noun==☆☆☆☆☆==
+134=laser==noun==☆☆☆☆☆==
+135=linear==adjective==☆☆☆☆☆==
+136=liver==noun==☆☆☆☆☆==
+137=long-term==adjective==☆☆☆☆☆==
+138=magnetic==adjective==☆☆☆☆☆==
+139=magnitude==noun==☆☆☆☆☆==
+140=maintenance==noun==☆☆☆☆☆==
+141=mammal==noun==☆☆☆☆☆==
+142=marine==adjective==☆☆☆☆☆==
+143=matrix==noun==☆☆☆☆☆==
+144=mechanical==adjective==☆☆☆☆☆==
+145=mechanism==noun==☆☆☆☆☆==
+146=membrane==noun==☆☆☆☆☆==
+147=mode==noun==☆☆☆☆☆==
+148=modification==noun==☆☆☆☆☆==
+149=modify==verb==☆☆☆☆☆==
+150=molecular==adjective==☆☆☆☆☆==
+151=molecule==noun==☆☆☆☆☆==
+152=mortality==noun==☆☆☆☆☆==
+153=multiple==adjective, noun==☆☆☆☆☆==
+154=mutant==adjective, noun==☆☆☆☆☆==
+155=mutation==noun==☆☆☆☆☆==
+156=neutron==noun==☆☆☆☆☆==
+157=node==noun==☆☆☆☆☆==
+158=nucleus==noun==☆☆☆☆☆==
+159=numerous==adjective==☆☆☆☆☆==
+160=observer==noun==☆☆☆☆☆==
+161=optical==adjective==☆☆☆☆☆==
+162=oral==adjective==☆☆☆☆☆==
+163=orbit==noun, verb==☆☆☆☆☆==
+164=organic==adjective==☆☆☆☆☆==
+165=organism==noun==☆☆☆☆☆==
+166=outcome==noun==☆☆☆☆☆==
+167=oxygen==noun==☆☆☆☆☆==
+168=ozone==noun==☆☆☆☆☆==
+169=parameter==noun==☆☆☆☆☆==
+170=particle==noun==☆☆☆☆☆==
+171=PC==noun==☆☆☆☆☆==
+172=percentage==noun==☆☆☆☆☆==
+173=pH==noun==☆☆☆☆☆==
+174=phenomenon==noun==☆☆☆☆☆==
+175=plasma==noun==☆☆☆☆☆==
+176=predator==noun==☆☆☆☆☆==
+177=prediction==noun==☆☆☆☆☆==
+178=prescribe==verb==☆☆☆☆☆==
+179=prey==noun, verb==☆☆☆☆☆==
+180=principal==adjective==☆☆☆☆☆==
+181=probability==noun==☆☆☆☆☆==
+182=probe==verb, noun==☆☆☆☆☆==
+183=profile==noun==☆☆☆☆☆==
+184=protein==noun==☆☆☆☆☆==
+185=protocol==noun==☆☆☆☆☆==
+186=proton==noun==☆☆☆☆☆==
+187=pulse==noun==☆☆☆☆☆==
+188=pump==noun, verb==☆☆☆☆☆==
+189=radiation==noun==☆☆☆☆☆==
+190=random==adjective, noun==☆☆☆☆☆==
+191=at==random==☆☆☆☆☆==
+192=rat==noun==☆☆☆☆☆==
+193=ratio==noun==☆☆☆☆☆==
+194=ray==noun==☆☆☆☆☆==
+195=reactor==noun==☆☆☆☆☆==
+196=readily==adverb==☆☆☆☆☆==
+197=receptor==noun==☆☆☆☆☆==
+198=replacement==noun==☆☆☆☆☆==
+199=researcher==noun==☆☆☆☆☆==
+200=residue==noun==☆☆☆☆☆==
+201=resolution==noun==☆☆☆☆☆==
+202=respective==adjective==☆☆☆☆☆==
+203=respectively==noun==☆☆☆☆☆==
+204=rotation==noun==☆☆☆☆☆==
+205=satellite==noun==☆☆☆☆☆==
+206=scan==verb, noun==☆☆☆☆☆==
+207=scatter==verb==☆☆☆☆☆==
+208=scattered==adjective==☆☆☆☆☆==
+209=sediment==noun==☆☆☆☆☆==
+210=segment==noun, verb==☆☆☆☆☆==
+211=sensitivity==noun==☆☆☆☆☆==
+212=sequence==noun, verb==☆☆☆☆☆==
+213=sequencing==noun==☆☆☆☆☆==
+214=serum==noun==☆☆☆☆☆==
+215=shield==noun, verb==☆☆☆☆☆==
+216=significance==noun==☆☆☆☆☆==
+217=sodium==noun==☆☆☆☆☆==
+218=solar==adjective==☆☆☆☆☆==
+219=solvent==noun==☆☆☆☆☆==
+220=species==noun==☆☆☆☆☆==
+221=specification==noun==☆☆☆☆☆==
+222=specify==verb==☆☆☆☆☆==
+223=specimen==noun==☆☆☆☆☆==
+224=spectrum==noun==☆☆☆☆☆==
+225=spine==noun==☆☆☆☆☆==
+226=stain==verb, noun==☆☆☆☆☆==
+227=statistic==noun==☆☆☆☆☆==
+228=statistics==noun==☆☆☆☆☆==
+229=statistical==adjective==☆☆☆☆☆==
+230=stem==noun, verb==☆☆☆☆☆==
+231=stimulate==verb==☆☆☆☆☆==
+232=stimulus==noun==☆☆☆☆☆==
+233=structural==adjective==☆☆☆☆☆==
+234=subsequent==adjective==☆☆☆☆☆==
+235=subsequently==adverb==☆☆☆☆☆==
+236=surgery==noun==☆☆☆☆☆==
+237=survival==noun==☆☆☆☆☆==
+238=symmetry==noun==☆☆☆☆☆==
+239=symptom==noun==☆☆☆☆☆==
+240=synthesis==noun==☆☆☆☆☆==
+241=terminal==noun, adjective==☆☆☆☆☆==
+242=theoretical==adjective==☆☆☆☆☆==
+243=therapy==noun==☆☆☆☆☆==
+244=tissue==noun==☆☆☆☆☆==
+245=toxic==adjective==☆☆☆☆☆==
+246=transformation==noun==☆☆☆☆☆==
+247=transition==noun==☆☆☆☆☆==
+248=transmission==noun==☆☆☆☆☆==
+249=transmit==verb==☆☆☆☆☆==
+250=tumour (BrE) (NamE tumor)==noun==☆☆☆☆☆==
+251=undergo==verb==☆☆☆☆☆==
+252=underlie==verb==☆☆☆☆☆==
+253=underlying==adjective==☆☆☆☆☆==
+254=undertake==verb==☆☆☆☆☆==
+255=undertaking==noun==☆☆☆☆☆==
+256=variable==adjective, noun==☆☆☆☆☆==
+257=vector==noun==☆☆☆☆☆==
+258=vegetation==noun==☆☆☆☆☆==
+259=velocity==noun==☆☆☆☆☆==
+260=visual==adjective, noun==☆☆☆☆☆==
+261=volcano==noun==☆☆☆☆☆==
+262=voltage==noun==☆☆☆☆☆==
+263=widespread==adjective==☆☆☆☆☆==
+264=wildlife==noun==☆☆☆☆☆==
+265=worldwide==adjective, adverb==☆☆☆☆☆==
+266=yield==verb, noun==☆☆☆☆☆==
