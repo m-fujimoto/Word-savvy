@@ -14,7 +14,7 @@
 
 * Release history
 
-* Version 1.2.0	(2020/02/14)
+* Version 1.2.0	(2020/02/24)
 	: Add Oxford Learner's Word Lists
 
 * Version 1.1.0	(2020/02/14)
