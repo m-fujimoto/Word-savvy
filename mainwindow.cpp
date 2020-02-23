@@ -264,9 +264,9 @@ QSqlError MainWindow::updateData()
     } else if (ui->tabWidget->currentIndex() == 2)
     {
         number = ui->Oxford_number_lineEdit->text().toInt();
-//        word = ui->Oxford_word_lineEdit->text();
+        word = ui->Oxford_word_lineEdit->text();
         pronunciation = ui->Oxford_pronunciation_lineEdit->text();
-//        part_of_speech = ui->Oxford_part_of_speech_comboBox->currentText();
+        part_of_speech = ui->Oxford_part_of_speech_comboBox->currentText();
         meaning = ui->Oxford_meaning_lineEdit->text();
         star = ui->Oxford_star_comboBox->currentText();
         memo = ui->Oxford_textEdit->toPlainText();
@@ -298,7 +298,6 @@ QSqlError MainWindow::updateData()
         query.bindValue(7, memo);
         query.bindValue(8, number);
 
-        qDebug() << number;
         if (query.exec())
         {
             QMessageBox msgBox;
@@ -783,7 +782,6 @@ void MainWindow::on_actiongoo_triggered()
 
 void MainWindow::on_actionLanguage_study_terms_triggered()
 {
-
     Language_study_terms *Language_study_termsWindow = new Language_study_terms;
     Language_study_termsWindow->show();
 }
@@ -814,7 +812,8 @@ void MainWindow::on_tabWidget_currentChanged(int index)
         tableName = "Japanese";
         selectData();
     } else if (index == 2) {
-
+        tableName = "Oxford";
+        ui->tabWidget->setTabText(2,tableName);
     }
 }
 
