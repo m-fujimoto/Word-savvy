@@ -1,5 +1,5 @@
 #
-# Word-savvy README
+# Word-savvy 
 #
 
 * Programme : Word-savvy
@@ -16,7 +16,7 @@
 
 * Version 1.2.0	(2020/02/14)
 	: Add Oxford Learner's Word Lists
-	
+
 * Version 1.1.0	(2020/02/14)
 	: Add part of speech field and search function.
 
