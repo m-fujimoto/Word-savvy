@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1045</width>
-    <height>776</height>
+    <width>1310</width>
+    <height>644</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -30,11 +30,17 @@
    <layout class="QHBoxLayout" name="horizontalLayout_3">
     <item>
      <widget class="QTabWidget" name="tabWidget">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
       <property name="autoFillBackground">
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <property name="tabsClosable">
        <bool>false</bool>
@@ -706,7 +712,7 @@
          <rect>
           <x>10</x>
           <y>10</y>
-          <width>1001</width>
+          <width>1272</width>
           <height>518</height>
          </rect>
         </property>
@@ -931,7 +937,7 @@
            <item>
             <widget class="QPushButton" name="Oxford_add_pushButton">
              <property name="enabled">
-              <bool>false</bool>
+              <bool>true</bool>
              </property>
              <property name="text">
               <string>Add</string>
@@ -1078,8 +1084,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1045</width>
-     <height>22</height>
+     <width>1310</width>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">

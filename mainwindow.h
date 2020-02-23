@@ -37,13 +37,24 @@ private slots:
     void on_actionOxford_Seventh_edition_Arts_words_triggered();
     void on_actionOxford_Seventh_edition_Science_words_triggered();
     void on_actionOxford_Seventh_edition_Business_and_finance_words_triggered();
+    void on_actionOxford_Advanced_Learner_s_Dictionary_triggered();
+    void on_actionLongman_Dictionary_triggered();
+    void on_actionCambridge_Dictionary_triggered();
+    void on_actionMacmillan_Dictionary_triggered();
+    void on_actionCollins_Dictionary_triggered();
+    void on_actionMerriam_Webster_Dictionary_triggered();
+    void on_actionLexico_triggered();
+    void on_actionUrban_Dictionary_triggered();
+    void on_actionWeblio_triggered();
+    void on_actionEijirou_triggered();
+    void on_actiongoo_triggered();
     void on_actionLanguage_study_terms_triggered();
     void on_actionManual_triggered();
     void on_actionAbout_triggered();
 
     // Tab
 
-    void on_tabWidget_currentChanged(int index);
+    void on_tabWidget_currentChanged();
 
     // English
 
@@ -81,20 +92,7 @@ private slots:
     void on_search_Oxford_keyword_by_memo_pushButton_clicked();
     void on_Oxford_review_pushButton_clicked();
     void on_Oxford_tableWidget_cellDoubleClicked(int row);
-
-    // Dictionary
-
-    void on_actionOxford_Advanced_Learner_s_Dictionary_triggered();
-    void on_actionLongman_Dictionary_triggered();
-    void on_actionCambridge_Dictionary_triggered();
-    void on_actionMacmillan_Dictionary_triggered();
-    void on_actionCollins_Dictionary_triggered();
-    void on_actionMerriam_Webster_Dictionary_triggered();
-    void on_actionLexico_triggered();
-    void on_actionUrban_Dictionary_triggered();
-    void on_actionWeblio_triggered();
-    void on_actionEijirou_triggered();
-    void on_actiongoo_triggered();
+    void on_Oxford_part_of_speech_comboBox_currentIndexChanged(const QString &arg1);
 
 private:
     Ui::MainWindow *ui;

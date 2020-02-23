@@ -61,6 +61,7 @@ QSqlError MainWindow::selectData()
         ui->Japanese_checkBox->setDisabled(true);
     } else if (ui->tabWidget->currentIndex() == 2)
     {
+        tableName = ui->tabWidget->tabText(2);
         ui->Oxford_number_lineEdit->setText("1");
         ui->Oxford_edit_pushButton->setDisabled(true);
         ui->Oxford_delete_pushButton->setDisabled(true);
@@ -74,20 +75,23 @@ QSqlError MainWindow::selectData()
             QStringList header = { "NUMBER", "WORD", "PRONUNCIATION", "PART OF SPEECH / CEFR", "MEANING", "STAR", "DATE", "MEMO"};
             ui->Oxford_tableWidget->setHorizontalHeaderLabels(header);
             ui->Oxford_word_label->setText("WORD : ");
-            ui->Oxford_part_of_speech_label->setText("PART OF SPEECH / CEFR");
+            ui->Oxford_part_of_speech_label->setText("Search by CEFR");
+            ui->Oxford_part_of_speech_comboBox->setDisabled(false);
         } else if (tableName == "Oxford Phrase List")
         {
             QStringList header = { "NUMBER", "PHRASE", "PRONUNCIATION", "CEFR", "MEANING", "STAR", "DATE", "MEMO"};
             ui->Oxford_tableWidget->setHorizontalHeaderLabels(header);
             ui->Oxford_word_label->setText("PHRASE : ");
-            ui->Oxford_part_of_speech_label->setText("CEFR : ");
-
+            ui->Oxford_part_of_speech_label->setText("Search by CEFR : ");
+            ui->Oxford_part_of_speech_comboBox->setDisabled(false);
         }  else
         {
             QStringList header = { "NUMBER", "WORD", "PRONUNCIATION", "PART OF SPEECH", "MEANING", "STAR", "DATE", "MEMO"};
             ui->Oxford_tableWidget->setHorizontalHeaderLabels(header);
             ui->Oxford_word_label->setText("WORD : ");
             ui->Oxford_part_of_speech_label->setText("PART OF SPEECH : ");
+            ui->Oxford_part_of_speech_comboBox->setDisabled(true);
+            ui->Oxford_part_of_speech_comboBox->clear();
         }
 
     }
@@ -399,7 +403,7 @@ QSqlError MainWindow::setData()
                 ui->Oxford_number_lineEdit->setText(QString::number(number));
                 ui->Oxford_word_lineEdit->setText(word);
                 ui->Oxford_pronunciation_lineEdit->setText(pronunciation);
-                ui->Oxford_part_of_speech_comboBox->setCurrentText(part_of_speech);
+//                ui->Oxford_part_of_speech_comboBox->setCurrentText(part_of_speech);
                 ui->Oxford_meaning_lineEdit->setText(meaning);
                 ui->Oxford_star_comboBox->setCurrentText(star);
                 ui->Oxford_textEdit->setText(memo);
@@ -435,9 +439,15 @@ QSqlError MainWindow::searchData()
     {
         ui->Oxford_edit_pushButton->setDisabled(true);
         ui->Oxford_delete_pushButton->setDisabled(true);
-        keyword = ui->Oxford_keyword_lineEdit->text();
-        if (choice == "STAR") {
+
+        if (choice == "STAR")
+        {
             keyword = ui->Oxford_star_comboBox->currentText();
+        } else if (choice == "CEFR")
+        {
+
+        } else {
+           keyword = ui->Oxford_keyword_lineEdit->text();
         }
     }
 
@@ -458,7 +468,11 @@ QSqlError MainWindow::searchData()
         } else if (choice == "PRONUNCIATION")
         {
             query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE PRONUNCIATION LIKE ?");
-        } else if (choice == "STAR")
+        } else if (choice == "CEFR")
+        {
+            query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE PART_OF_SPEECH LIKE ?");
+        }
+        else if (choice == "STAR")
         {
             query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE STAR=?");
         } else if (choice == "MEMO")
@@ -466,7 +480,8 @@ QSqlError MainWindow::searchData()
             query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' WHERE MEMO LIKE ?");
         }
 
-        if (choice == "STAR") {
+        if (choice == "STAR")
+        {
             query.bindValue(0,keyword);
         } else
         {
@@ -565,7 +580,6 @@ QSqlError MainWindow::csvData()
             memo = query.value(7).toString();
             csv_line = csv_line + log_number + delimiter + word + delimiter + pronunciation + delimiter + part_of_speech + delimiter + meaning + delimiter + star + delimiter + date + delimiter + memo + "\n";
         }
-
     }
     return QSqlError();
 }
@@ -610,6 +624,12 @@ void MainWindow::on_actionOxford_3000_triggered()
     ui->tabWidget->setCurrentIndex(2);
     tableName = "Oxford 3000";
     ui->tabWidget->setTabText(2,tableName);
+    ui->Oxford_part_of_speech_comboBox->clear();
+    ui->Oxford_part_of_speech_comboBox->addItem("");
+    ui->Oxford_part_of_speech_comboBox->addItem("A1");
+    ui->Oxford_part_of_speech_comboBox->addItem("A2");
+    ui->Oxford_part_of_speech_comboBox->addItem("B1");
+    ui->Oxford_part_of_speech_comboBox->addItem("B2");
     selectData();
 }
 
@@ -618,6 +638,13 @@ void MainWindow::on_actionOxford_5000_triggered()
     ui->tabWidget->setCurrentIndex(2);
     tableName = "Oxford 5000";
     ui->tabWidget->setTabText(2,tableName);
+    ui->Oxford_part_of_speech_comboBox->clear();
+    ui->Oxford_part_of_speech_comboBox->addItem("");
+    ui->Oxford_part_of_speech_comboBox->addItem("A1");
+    ui->Oxford_part_of_speech_comboBox->addItem("A2");
+    ui->Oxford_part_of_speech_comboBox->addItem("B1");
+    ui->Oxford_part_of_speech_comboBox->addItem("B2");
+    ui->Oxford_part_of_speech_comboBox->addItem("C1");
     selectData();
 }
 
@@ -626,6 +653,10 @@ void MainWindow::on_actionOxford_5000_excluding_Oxford_3000_triggered()
     ui->tabWidget->setCurrentIndex(2);
     tableName = "Oxford 5000 excluding Oxford 3000";
     ui->tabWidget->setTabText(2,tableName);
+    ui->Oxford_part_of_speech_comboBox->clear();
+    ui->Oxford_part_of_speech_comboBox->addItem("");
+    ui->Oxford_part_of_speech_comboBox->addItem("B2");
+    ui->Oxford_part_of_speech_comboBox->addItem("C1");
     selectData();
 }
 
@@ -642,6 +673,13 @@ void MainWindow::on_actionOxford_Phrase_List_triggered()
     ui->tabWidget->setCurrentIndex(2);
     tableName = "Oxford Phrase List";
     ui->tabWidget->setTabText(2,tableName);
+    ui->Oxford_part_of_speech_comboBox->clear();
+    ui->Oxford_part_of_speech_comboBox->addItem("");
+    ui->Oxford_part_of_speech_comboBox->addItem("A1");
+    ui->Oxford_part_of_speech_comboBox->addItem("A2");
+    ui->Oxford_part_of_speech_comboBox->addItem("B1");
+    ui->Oxford_part_of_speech_comboBox->addItem("B2");
+    ui->Oxford_part_of_speech_comboBox->addItem("C1");
     selectData();
 }
 
@@ -844,21 +882,11 @@ void MainWindow::on_actionAbout_triggered()
 
 // Tab
 
-void MainWindow::on_tabWidget_currentChanged(int index)
+void MainWindow::on_tabWidget_currentChanged()
 {
-    if (index == 0)
-    {
-        tableName = "English";
         selectData();
-    } else if (index == 1)
-    {
-        tableName = "Japanese";
-        selectData();
-    } else if (index == 2) {
-        tableName = "Oxford";
-        ui->tabWidget->setTabText(2,tableName);
-    }
 }
+
 
 // Compobox
 
@@ -1133,6 +1161,16 @@ void MainWindow::on_Oxford_tableWidget_cellDoubleClicked(int row)
     setData();
 }
 
-
-
-
+void MainWindow::on_Oxford_part_of_speech_comboBox_currentIndexChanged(const QString &arg1)
+{
+    ui->Oxford_word_lineEdit->setText("");
+    if (arg1 != "")
+    {
+        choice = "CEFR";
+        keyword = arg1;
+        searchData();
+    } else
+    {
+        selectData();
+    }
+}
