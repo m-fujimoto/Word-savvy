@@ -266,7 +266,7 @@ QSqlError MainWindow::updateData()
         number = ui->Oxford_number_lineEdit->text().toInt();
         word = ui->Oxford_word_lineEdit->text();
         pronunciation = ui->Oxford_pronunciation_lineEdit->text();
-        part_of_speech = ui->Oxford_part_of_speech_comboBox->currentText();
+//       part_of_speech = ui->Oxford_part_of_speech_comboBox->currentText();
         meaning = ui->Oxford_meaning_lineEdit->text();
         star = ui->Oxford_star_comboBox->currentText();
         memo = ui->Oxford_textEdit->toPlainText();
@@ -543,7 +543,50 @@ QSqlError MainWindow::searchData()
     return QSqlError();
 }
 
+QSqlError MainWindow::csvData()
+{
+    QSqlQuery query;
+    query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH,MEANING, STAR, DATE, MEMO FROM '" + tableName + "'");
+
+    QString log_number;
+    QString delimiter = "=";
+
+    if (query.exec())
+    {
+        while (query.next())
+        {
+            log_number = query.value(0).toString();
+            word = query.value(1).toString();
+            pronunciation = query.value(2).toString();
+            part_of_speech =query.value(3).toString();
+            meaning = query.value(4).toString();
+            star = query.value(5).toString();
+            date = query.value(6).toString();
+            memo = query.value(7).toString();
+            csv_line = csv_line + log_number + delimiter + word + delimiter + pronunciation + delimiter + part_of_speech + delimiter + meaning + delimiter + star + delimiter + date + delimiter + memo + "\n";
+        }
+
+    }
+    return QSqlError();
+}
+
 // Menu
+
+void MainWindow::on_actionTable_s_CSV_file_triggered()
+{
+    csvData();
+    QString fileName;
+    fileName = QFileDialog::getSaveFileName(this, "Save");
+    QFile file(fileName);
+    if (!file.open(QIODevice::WriteOnly | QFile::Text)) {
+        QMessageBox::warning(this, "Warning", "Cannot save file: " + file.errorString());
+        return;
+    }
+    QTextStream out(&file);
+    QString text = csv_line;
+    out << text;
+    file.close();
+}
 
 void MainWindow::on_actionQuit_triggered()
 {
@@ -840,7 +883,7 @@ void MainWindow::set_part_of_speech_comboBox()
     for (int var = 0; var < term.size(); ++var) {
         ui->English_part_of_speech_comboBox->addItem(term[var]);
         ui->Japanese_part_of_speech_comboBox->addItem(term[var]);
-        ui->Oxford_part_of_speech_comboBox->addItem(term[var]);
+//        ui->Oxford_part_of_speech_comboBox->addItem(term[var]);
     }
 }
 
@@ -1071,7 +1114,6 @@ void MainWindow::on_Oxford_review_pushButton_clicked()
 {
     choice = "STAR";
     searchData();
-
 }
 
 void MainWindow::clear_Oxford_form()
@@ -1088,5 +1130,9 @@ void MainWindow::clear_Oxford_form()
 void MainWindow::on_Oxford_tableWidget_cellDoubleClicked(int row)
 {
     number = ui->Oxford_tableWidget->item(row,0)->text().toInt();
-    setData();  
+    setData();
 }
+
+
+
+

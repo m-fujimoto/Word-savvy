@@ -9,7 +9,7 @@
 #include <QTableWidget>
 #include <QFontDialog>
 #include <QDesktopServices>
-
+#include <QFileDialog>
 
 namespace Ui {
 class MainWindow;
@@ -26,6 +26,7 @@ public:
 private slots:
     // Menu
 
+    void on_actionTable_s_CSV_file_triggered();
     void on_actionQuit_triggered();
     void on_actionFont_triggered();
     void on_actionOxford_3000_triggered();
@@ -115,6 +116,7 @@ private:
     QString choice;
     QString keyword;
     QString url;
+    QString csv_line;
 
     QSqlError connectDatabase();
     QSqlError closeDatabase();
@@ -124,6 +126,7 @@ private:
     QSqlError deleteData();
     QSqlError setData();
     QSqlError searchData();
+    QSqlError csvData();
 
     void clear_English_form();
     void clear_Japanese_form();
