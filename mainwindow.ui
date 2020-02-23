@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1310</width>
-    <height>644</height>
+    <width>1309</width>
+    <height>630</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -27,7 +27,7 @@
    <string notr="true"/>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <layout class="QHBoxLayout" name="horizontalLayout_3">
+   <layout class="QVBoxLayout" name="verticalLayout_4">
     <item>
      <widget class="QTabWidget" name="tabWidget">
       <property name="sizePolicy">
@@ -40,7 +40,7 @@
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <property name="tabsClosable">
        <bool>false</bool>
@@ -149,6 +149,12 @@
             </item>
             <item>
              <widget class="QLineEdit" name="English_number_lineEdit">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="readOnly">
                <bool>true</bool>
               </property>
@@ -183,6 +189,12 @@
             </item>
             <item>
              <widget class="QComboBox" name="English_part_of_speech_comboBox">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <item>
                <property name="text">
                 <string/>
@@ -199,6 +211,12 @@
             </item>
             <item>
              <widget class="QComboBox" name="English_star_comboBox">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <item>
                <property name="text">
                 <string>☆☆☆☆☆</string>
@@ -273,7 +291,7 @@
             <item>
              <widget class="QPushButton" name="English_add_pushButton">
               <property name="sizePolicy">
-               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                 <horstretch>0</horstretch>
                 <verstretch>0</verstretch>
                </sizepolicy>
@@ -291,6 +309,12 @@
             </item>
             <item>
              <widget class="QPushButton" name="English_reset_pushButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="text">
                <string>Reset</string>
               </property>
@@ -299,7 +323,7 @@
             <item>
              <widget class="QPushButton" name="English_close_pushButton">
               <property name="sizePolicy">
-               <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
                 <horstretch>0</horstretch>
                 <verstretch>0</verstretch>
                </sizepolicy>
@@ -311,6 +335,12 @@
             </item>
             <item>
              <widget class="QPushButton" name="English_edit_pushButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="text">
                <string>Edit</string>
               </property>
@@ -318,6 +348,12 @@
             </item>
             <item>
              <widget class="QPushButton" name="English_delete_pushButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="text">
                <string>Delete</string>
               </property>
@@ -325,6 +361,12 @@
             </item>
             <item>
              <widget class="QCheckBox" name="English_checkBox">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="text">
                <string>Tick this box to edit or delete a data</string>
               </property>
@@ -372,6 +414,12 @@
             </item>
             <item>
              <widget class="QPushButton" name="search_English_keyword_by_pronunciation_pushButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="text">
                <string>Search KEYWORD by PRONUNCIATION</string>
               </property>
@@ -392,6 +440,12 @@
             </item>
             <item>
              <widget class="QPushButton" name="English_review_pushButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="text">
                <string>Review</string>
               </property>
@@ -482,6 +536,12 @@
            <layout class="QHBoxLayout" name="horizontalLayout_4">
             <item>
              <widget class="QLabel" name="label_6">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="text">
                <string>NUMBER : </string>
               </property>
@@ -489,6 +549,12 @@
             </item>
             <item>
              <widget class="QLineEdit" name="Japanese_number_lineEdit">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="readOnly">
                <bool>true</bool>
               </property>
@@ -502,7 +568,14 @@
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="Japanese_word_lineEdit"/>
+             <widget class="QLineEdit" name="Japanese_word_lineEdit">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+             </widget>
             </item>
             <item>
              <widget class="QLabel" name="label_8">
@@ -512,10 +585,23 @@
              </widget>
             </item>
             <item>
-             <widget class="QLineEdit" name="Japanese_pronunciation_lineEdit"/>
+             <widget class="QLineEdit" name="Japanese_pronunciation_lineEdit">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+             </widget>
             </item>
             <item>
              <widget class="QLabel" name="label_16">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="text">
                <string>PART OF SPEECH : </string>
               </property>
@@ -523,6 +609,12 @@
             </item>
             <item>
              <widget class="QComboBox" name="Japanese_part_of_speech_comboBox">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <item>
                <property name="text">
                 <string/>
@@ -532,6 +624,12 @@
             </item>
             <item>
              <widget class="QLabel" name="label_12">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="text">
                <string>STAR : </string>
               </property>
@@ -539,6 +637,12 @@
             </item>
             <item>
              <widget class="QComboBox" name="Japanese_star_comboBox">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <item>
                <property name="text">
                 <string>☆☆☆☆☆</string>
@@ -612,6 +716,12 @@
            <layout class="QHBoxLayout" name="horizontalLayout_9">
             <item>
              <widget class="QPushButton" name="Japanese_add_pushButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="text">
                <string>Add</string>
               </property>
@@ -619,6 +729,12 @@
             </item>
             <item>
              <widget class="QPushButton" name="Japanese_reset_pushButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="text">
                <string>Reset</string>
               </property>
@@ -626,6 +742,12 @@
             </item>
             <item>
              <widget class="QPushButton" name="Japanese_close_pushButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="text">
                <string>Close</string>
               </property>
@@ -633,6 +755,12 @@
             </item>
             <item>
              <widget class="QPushButton" name="Japanese_edit_pushButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="text">
                <string>Edit</string>
               </property>
@@ -640,6 +768,12 @@
             </item>
             <item>
              <widget class="QPushButton" name="Japanese_delete_pushButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="text">
                <string>Delete</string>
               </property>
@@ -647,6 +781,12 @@
             </item>
             <item>
              <widget class="QCheckBox" name="Japanese_checkBox">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="text">
                <string>Tick this box to edit or delete a data</string>
               </property>
@@ -668,6 +808,12 @@
             </item>
             <item>
              <widget class="QPushButton" name="search_Japanese_keyword_by_word_pushButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="text">
                <string>Search KEYWORD by WORD</string>
               </property>
@@ -675,6 +821,12 @@
             </item>
             <item>
              <widget class="QPushButton" name="search_Japanese_keyword_by_pronunciation_pushButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="text">
                <string>Search KEYWORD by PRONUNCIATION</string>
               </property>
@@ -682,6 +834,12 @@
             </item>
             <item>
              <widget class="QPushButton" name="search_Japanese_keyword_by_memo_pushButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="text">
                <string>Search KEYWORD by MEMO</string>
               </property>
@@ -689,6 +847,12 @@
             </item>
             <item>
              <widget class="QPushButton" name="Japanese_review_pushButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
               <property name="autoFillBackground">
                <bool>false</bool>
               </property>
@@ -707,373 +871,409 @@
        <attribute name="title">
         <string>Oxford</string>
        </attribute>
-       <widget class="QWidget" name="layoutWidget">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>10</y>
-          <width>1272</width>
-          <height>518</height>
-         </rect>
-        </property>
-        <layout class="QVBoxLayout" name="verticalLayout_3">
-         <item>
-          <widget class="QTableWidget" name="Oxford_tableWidget">
-           <property name="sizePolicy">
-            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
-             <horstretch>0</horstretch>
-             <verstretch>0</verstretch>
-            </sizepolicy>
-           </property>
-           <property name="autoFillBackground">
-            <bool>false</bool>
-           </property>
-           <property name="editTriggers">
-            <set>QAbstractItemView::NoEditTriggers</set>
-           </property>
-           <property name="alternatingRowColors">
-            <bool>false</bool>
-           </property>
-           <property name="textElideMode">
-            <enum>Qt::ElideRight</enum>
-           </property>
-           <property name="sortingEnabled">
-            <bool>false</bool>
-           </property>
-           <attribute name="horizontalHeaderCascadingSectionResizes">
-            <bool>true</bool>
-           </attribute>
-           <attribute name="horizontalHeaderDefaultSectionSize">
-            <number>120</number>
-           </attribute>
-           <attribute name="horizontalHeaderStretchLastSection">
-            <bool>true</bool>
-           </attribute>
-           <attribute name="verticalHeaderVisible">
-            <bool>false</bool>
-           </attribute>
-           <attribute name="verticalHeaderStretchLastSection">
-            <bool>false</bool>
-           </attribute>
-           <column>
-            <property name="text">
-             <string>NUMBER</string>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_3">
+          <item>
+           <widget class="QTableWidget" name="Oxford_tableWidget">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
             </property>
-           </column>
-           <column>
-            <property name="text">
-             <string>WORD</string>
+            <property name="autoFillBackground">
+             <bool>false</bool>
             </property>
-           </column>
-           <column>
-            <property name="text">
-             <string>PRONUNCIATION</string>
+            <property name="editTriggers">
+             <set>QAbstractItemView::NoEditTriggers</set>
             </property>
-           </column>
-           <column>
-            <property name="text">
-             <string>PART OF SPEECH</string>
+            <property name="alternatingRowColors">
+             <bool>false</bool>
             </property>
-           </column>
-           <column>
-            <property name="text">
-             <string>MEANING</string>
+            <property name="textElideMode">
+             <enum>Qt::ElideRight</enum>
             </property>
-           </column>
-           <column>
-            <property name="text">
-             <string>STAR</string>
+            <property name="sortingEnabled">
+             <bool>false</bool>
             </property>
-           </column>
-           <column>
-            <property name="text">
-             <string>DATE</string>
-            </property>
-           </column>
-           <column>
-            <property name="text">
-             <string>MEMO</string>
-            </property>
-           </column>
-          </widget>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_13">
-           <item>
-            <widget class="QLabel" name="label_17">
+            <attribute name="horizontalHeaderCascadingSectionResizes">
+             <bool>true</bool>
+            </attribute>
+            <attribute name="horizontalHeaderDefaultSectionSize">
+             <number>120</number>
+            </attribute>
+            <attribute name="horizontalHeaderStretchLastSection">
+             <bool>true</bool>
+            </attribute>
+            <attribute name="verticalHeaderVisible">
+             <bool>false</bool>
+            </attribute>
+            <attribute name="verticalHeaderStretchLastSection">
+             <bool>false</bool>
+            </attribute>
+            <column>
              <property name="text">
-              <string>NUMBER :</string>
+              <string>NUMBER</string>
              </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLineEdit" name="Oxford_number_lineEdit">
-             <property name="enabled">
-              <bool>true</bool>
-             </property>
-             <property name="readOnly">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLabel" name="Oxford_word_label">
+            </column>
+            <column>
              <property name="text">
-              <string>WORD : </string>
+              <string>WORD</string>
              </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLineEdit" name="Oxford_word_lineEdit">
-             <property name="readOnly">
-              <bool>true</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLabel" name="label_19">
+            </column>
+            <column>
              <property name="text">
-              <string>PRONUNCIATION : </string>
+              <string>PRONUNCIATION</string>
              </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLineEdit" name="Oxford_pronunciation_lineEdit"/>
-           </item>
-           <item>
-            <widget class="QLabel" name="Oxford_part_of_speech_label">
+            </column>
+            <column>
              <property name="text">
-              <string>PART OF SPEECH : </string>
+              <string>PART OF SPEECH</string>
              </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QComboBox" name="Oxford_part_of_speech_comboBox">
-             <property name="enabled">
-              <bool>false</bool>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLabel" name="label_21">
+            </column>
+            <column>
              <property name="text">
-              <string>STAR : </string>
+              <string>MEANING</string>
              </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QComboBox" name="Oxford_star_comboBox">
-             <item>
+            </column>
+            <column>
+             <property name="text">
+              <string>STAR</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>DATE</string>
+             </property>
+            </column>
+            <column>
+             <property name="text">
+              <string>MEMO</string>
+             </property>
+            </column>
+           </widget>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_13">
+            <item>
+             <widget class="QLabel" name="label_17">
               <property name="text">
-               <string>☆☆☆☆☆</string>
+               <string>NUMBER :</string>
               </property>
-             </item>
-             <item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="Oxford_number_lineEdit">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="Oxford_word_label">
               <property name="text">
-               <string>★☆☆☆☆</string>
+               <string>WORD : </string>
               </property>
-             </item>
-             <item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="Oxford_word_lineEdit">
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_19">
               <property name="text">
-               <string>★★☆☆☆</string>
+               <string>PRONUNCIATION : </string>
               </property>
-             </item>
-             <item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="Oxford_pronunciation_lineEdit"/>
+            </item>
+            <item>
+             <widget class="QLabel" name="Oxford_part_of_speech_label">
               <property name="text">
-               <string>★★★☆☆</string>
+               <string>PART OF SPEECH : </string>
               </property>
-             </item>
-             <item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="Oxford_part_of_speech_comboBox">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="label_21">
               <property name="text">
-               <string>★★★★☆</string>
+               <string>STAR : </string>
               </property>
-             </item>
-             <item>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="Oxford_star_comboBox">
+              <item>
+               <property name="text">
+                <string>☆☆☆☆☆</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>★☆☆☆☆</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>★★☆☆☆</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>★★★☆☆</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>★★★★☆</string>
+               </property>
+              </item>
+              <item>
+               <property name="text">
+                <string>★★★★★</string>
+               </property>
+              </item>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_14">
+            <item>
+             <widget class="QLabel" name="label_22">
               <property name="text">
-               <string>★★★★★</string>
+               <string>MEANING : </string>
               </property>
-             </item>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_14">
-           <item>
-            <widget class="QLabel" name="label_22">
-             <property name="text">
-              <string>MEANING : </string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLineEdit" name="Oxford_meaning_lineEdit"/>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_16">
-           <item>
-            <widget class="QLabel" name="label_23">
-             <property name="text">
-              <string>MEMO : </string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QTextEdit" name="Oxford_textEdit">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_17">
-           <item>
-            <widget class="QPushButton" name="Oxford_add_pushButton">
-             <property name="enabled">
-              <bool>true</bool>
-             </property>
-             <property name="text">
-              <string>Add</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="Oxford_reset_pushButton">
-             <property name="text">
-              <string>Reset</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="Oxford_close_pushButton">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="text">
-              <string>Close</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="Oxford_edit_pushButton">
-             <property name="text">
-              <string>Edit</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="Oxford_delete_pushButton">
-             <property name="enabled">
-              <bool>false</bool>
-             </property>
-             <property name="text">
-              <string>Delete</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QCheckBox" name="Oxford_checkBox">
-             <property name="text">
-              <string>Tick this box to edit or delete a data</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item>
-          <layout class="QHBoxLayout" name="horizontalLayout_18">
-           <item>
-            <widget class="QLabel" name="label_24">
-             <property name="text">
-              <string>KEYWORD : </string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QLineEdit" name="Oxford_keyword_lineEdit">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>200</width>
-               <height>0</height>
-              </size>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="search_Oxford_keyword_by_word_pushButton">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="text">
-              <string>Search KEYWORD by WORD</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="search_Oxford_keyword_by_pronunciation_pushButton">
-             <property name="text">
-              <string>Search KEYWORD by PRONUNCIATION</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="search_Oxford_keyword_by_memo_pushButton">
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="text">
-              <string>Search KEYWORD  by MEMO</string>
-             </property>
-            </widget>
-           </item>
-           <item>
-            <widget class="QPushButton" name="Oxford_review_pushButton">
-             <property name="enabled">
-              <bool>true</bool>
-             </property>
-             <property name="sizePolicy">
-              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
-               <horstretch>0</horstretch>
-               <verstretch>0</verstretch>
-              </sizepolicy>
-             </property>
-             <property name="minimumSize">
-              <size>
-               <width>0</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>Review</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-        </layout>
-       </widget>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="Oxford_meaning_lineEdit"/>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_16">
+            <item>
+             <widget class="QLabel" name="label_23">
+              <property name="text">
+               <string>MEMO : </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTextEdit" name="Oxford_textEdit">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_17">
+            <item>
+             <widget class="QPushButton" name="Oxford_add_pushButton">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>Add</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Oxford_reset_pushButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>Reset</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Oxford_close_pushButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>Close</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Oxford_edit_pushButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>Edit</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Oxford_delete_pushButton">
+              <property name="enabled">
+               <bool>false</bool>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>Delete</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QCheckBox" name="Oxford_checkBox">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>Tick this box to edit or delete a data</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_18">
+            <item>
+             <widget class="QLabel" name="label_24">
+              <property name="text">
+               <string>KEYWORD : </string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="Oxford_keyword_lineEdit">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>0</height>
+               </size>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="search_Oxford_keyword_by_word_pushButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>Search KEYWORD by WORD</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="search_Oxford_keyword_by_pronunciation_pushButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>Search KEYWORD by PRONUNCIATION</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="search_Oxford_keyword_by_memo_pushButton">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>Search KEYWORD  by MEMO</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="Oxford_review_pushButton">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>Review</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
       </widget>
      </widget>
     </item>
@@ -1084,8 +1284,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1310</width>
-     <height>20</height>
+     <width>1309</width>
+     <height>22</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -1107,7 +1307,7 @@
     </property>
     <addaction name="actionLanguage_study_terms"/>
     <addaction name="actionManual"/>
-    <addaction name="actionAbout"/>
+    <addaction name="actionAbout_Word_savvy"/>
    </widget>
    <widget class="QMenu" name="menuOptions">
     <property name="title">
@@ -1182,11 +1382,6 @@
   <action name="actionQuit">
    <property name="text">
     <string>Quit</string>
-   </property>
-  </action>
-  <action name="actionAbout">
-   <property name="text">
-    <string>About</string>
    </property>
   </action>
   <action name="actionOxford_3000">
@@ -1307,6 +1502,11 @@
   <action name="actionTable_s_CSV_file">
    <property name="text">
     <string>Table(s) CSV file</string>
+   </property>
+  </action>
+  <action name="actionAbout_Word_savvy">
+   <property name="text">
+    <string>About Word-savvy</string>
    </property>
   </action>
  </widget>
