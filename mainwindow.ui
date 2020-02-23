@@ -30,8 +30,20 @@
    <layout class="QHBoxLayout" name="horizontalLayout_3">
     <item>
      <widget class="QTabWidget" name="tabWidget">
+      <property name="autoFillBackground">
+       <bool>false</bool>
+      </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
+      </property>
+      <property name="tabsClosable">
+       <bool>false</bool>
+      </property>
+      <property name="movable">
+       <bool>false</bool>
+      </property>
+      <property name="tabBarAutoHide">
+       <bool>true</bool>
       </property>
       <widget class="QWidget" name="English_tab">
        <attribute name="title">
@@ -164,48 +176,7 @@
              </widget>
             </item>
             <item>
-             <widget class="QComboBox" name="English_part_of_speech_comboBox">
-              <item>
-               <property name="text">
-                <string/>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>n.</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>v.</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>pron.</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>prep.</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>adj.</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>adv.</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>conj.</string>
-               </property>
-              </item>
-             </widget>
+             <widget class="QComboBox" name="English_part_of_speech_comboBox"/>
             </item>
             <item>
              <widget class="QLabel" name="label_11">
@@ -215,30 +186,30 @@
              </widget>
             </item>
             <item>
-             <widget class="QComboBox" name="English_comboBox">
+             <widget class="QComboBox" name="English_star_comboBox">
               <item>
                <property name="text">
-                <string/>
+                <string>☆☆☆☆☆</string>
                </property>
               </item>
               <item>
                <property name="text">
-                <string>★</string>
+                <string>★☆☆☆☆</string>
                </property>
               </item>
               <item>
                <property name="text">
-                <string>★★</string>
+                <string>★★☆☆☆</string>
                </property>
               </item>
               <item>
                <property name="text">
-                <string>★★★</string>
+                <string>★★★☆☆</string>
                </property>
               </item>
               <item>
                <property name="text">
-                <string>★★★★</string>
+                <string>★★★★☆</string>
                </property>
               </item>
               <item>
@@ -354,7 +325,7 @@
             <item>
              <widget class="QLabel" name="label_13">
               <property name="text">
-               <string>Keyword : </string>
+               <string>KEYWORD : </string>
               </property>
              </widget>
             </item>
@@ -383,14 +354,14 @@
                </sizepolicy>
               </property>
               <property name="text">
-               <string>Search Keyword by WORD</string>
+               <string>Search KEYWORD by WORD</string>
               </property>
              </widget>
             </item>
             <item>
              <widget class="QPushButton" name="search_English_keyword_by_pronunciation_pushButton">
               <property name="text">
-               <string>Search Keyword by PRONUNCIATION</string>
+               <string>Search KEYWORD by PRONUNCIATION</string>
               </property>
              </widget>
             </item>
@@ -403,7 +374,14 @@
                </sizepolicy>
               </property>
               <property name="text">
-               <string>Search Keyword  by MEMO</string>
+               <string>Search KEYWORD  by MEMO</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="English_review_pushButton">
+              <property name="text">
+               <string>Review</string>
               </property>
              </widget>
             </item>
@@ -538,41 +516,6 @@
                 <string/>
                </property>
               </item>
-              <item>
-               <property name="text">
-                <string>n.</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>v.</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>pron.</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>prep.</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>adj.</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>adv.</string>
-               </property>
-              </item>
-              <item>
-               <property name="text">
-                <string>conj.</string>
-               </property>
-              </item>
              </widget>
             </item>
             <item>
@@ -583,30 +526,30 @@
              </widget>
             </item>
             <item>
-             <widget class="QComboBox" name="Japanese_comboBox">
+             <widget class="QComboBox" name="Japanese_star_comboBox">
               <item>
                <property name="text">
-                <string/>
+                <string>☆☆☆☆☆</string>
                </property>
               </item>
               <item>
                <property name="text">
-                <string>★</string>
+                <string>★☆☆☆☆</string>
                </property>
               </item>
               <item>
                <property name="text">
-                <string>★★</string>
+                <string>★★☆☆☆</string>
                </property>
               </item>
               <item>
                <property name="text">
-                <string>★★★</string>
+                <string>★★★☆☆</string>
                </property>
               </item>
               <item>
                <property name="text">
-                <string>★★★★</string>
+                <string>★★★★☆</string>
                </property>
               </item>
               <item>
@@ -732,11 +675,433 @@
               </property>
              </widget>
             </item>
+            <item>
+             <widget class="QPushButton" name="Japanese_review_pushButton">
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="text">
+               <string>Review</string>
+              </property>
+             </widget>
+            </item>
            </layout>
           </item>
          </layout>
         </item>
        </layout>
+      </widget>
+      <widget class="QWidget" name="Oxford_tab">
+       <attribute name="title">
+        <string>Oxford</string>
+       </attribute>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>1001</width>
+          <height>518</height>
+         </rect>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <item>
+          <widget class="QTableWidget" name="Oxford_tableWidget">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="autoFillBackground">
+            <bool>false</bool>
+           </property>
+           <property name="editTriggers">
+            <set>QAbstractItemView::NoEditTriggers</set>
+           </property>
+           <property name="alternatingRowColors">
+            <bool>false</bool>
+           </property>
+           <property name="textElideMode">
+            <enum>Qt::ElideRight</enum>
+           </property>
+           <property name="sortingEnabled">
+            <bool>false</bool>
+           </property>
+           <attribute name="horizontalHeaderCascadingSectionResizes">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="horizontalHeaderDefaultSectionSize">
+            <number>120</number>
+           </attribute>
+           <attribute name="horizontalHeaderStretchLastSection">
+            <bool>true</bool>
+           </attribute>
+           <attribute name="verticalHeaderVisible">
+            <bool>false</bool>
+           </attribute>
+           <attribute name="verticalHeaderStretchLastSection">
+            <bool>false</bool>
+           </attribute>
+           <column>
+            <property name="text">
+             <string>NUMBER</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>WORD</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>PRONUNCIATION</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>PART OF SPEECH</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>MEANING</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>STAR</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>DATE</string>
+            </property>
+           </column>
+           <column>
+            <property name="text">
+             <string>MEMO</string>
+            </property>
+           </column>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_13">
+           <item>
+            <widget class="QLabel" name="label_17">
+             <property name="text">
+              <string>NUMBER :</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="Oxford_number_lineEdit">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="Oxford_word_label">
+             <property name="text">
+              <string>WORD : </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="Oxford_word_lineEdit">
+             <property name="readOnly">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_19">
+             <property name="text">
+              <string>PRONUNCIATION : </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="Oxford_pronunciation_lineEdit"/>
+           </item>
+           <item>
+            <widget class="QLabel" name="Oxford_part_of_speech_label">
+             <property name="text">
+              <string>PART OF SPEECH : </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="Oxford_part_of_speech_comboBox">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <item>
+              <property name="text">
+               <string/>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>n.</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>v.</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>pron.</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>prep.</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>adj.</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>adv.</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>conj.</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_21">
+             <property name="text">
+              <string>STAR : </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QComboBox" name="Oxford_star_comboBox">
+             <item>
+              <property name="text">
+               <string>☆☆☆☆☆</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>★☆☆☆☆</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>★★☆☆☆</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>★★★☆☆</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>★★★★☆</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>★★★★★</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_14">
+           <item>
+            <widget class="QLabel" name="label_22">
+             <property name="text">
+              <string>MEANING : </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="Oxford_meaning_lineEdit"/>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_16">
+           <item>
+            <widget class="QLabel" name="label_23">
+             <property name="text">
+              <string>MEMO : </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QTextEdit" name="Oxford_textEdit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Minimum">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_17">
+           <item>
+            <widget class="QPushButton" name="Oxford_add_pushButton">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="text">
+              <string>Add</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Oxford_reset_pushButton">
+             <property name="text">
+              <string>Reset</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Oxford_close_pushButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Close</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Oxford_edit_pushButton">
+             <property name="text">
+              <string>Edit</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Oxford_delete_pushButton">
+             <property name="enabled">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>Delete</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="Oxford_checkBox">
+             <property name="text">
+              <string>Tick this box to edit or delete a data</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_18">
+           <item>
+            <widget class="QLabel" name="label_24">
+             <property name="text">
+              <string>Keyword : </string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLineEdit" name="Oxford_keyword_lineEdit">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>200</width>
+               <height>0</height>
+              </size>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="search_Oxford_keyword_by_word_pushButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Search Keyword by WORD</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="search_Oxford_keyword_by_pronunciation_pushButton">
+             <property name="text">
+              <string>Search Keyword by PRONUNCIATION</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="search_Oxford_keyword_by_memo_pushButton">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>Search Keyword  by MEMO</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="Oxford_review_pushButton">
+             <property name="enabled">
+              <bool>true</bool>
+             </property>
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>Review</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
       </widget>
      </widget>
     </item>
@@ -761,6 +1126,8 @@
     <property name="title">
      <string>Help</string>
     </property>
+    <addaction name="actionLanguage_study_terms"/>
+    <addaction name="actionManual"/>
     <addaction name="actionAbout"/>
    </widget>
    <widget class="QMenu" name="menuOptions">
@@ -769,8 +1136,54 @@
     </property>
     <addaction name="actionFont"/>
    </widget>
+   <widget class="QMenu" name="menuOxford">
+    <property name="title">
+     <string>Oxford</string>
+    </property>
+    <widget class="QMenu" name="menuOXford_Seventh_Edition_Specialist_lists">
+     <property name="title">
+      <string>OXford Seventh Edition Specialist lists</string>
+     </property>
+     <addaction name="actionOxford_Seventh_edition_Arts_words"/>
+     <addaction name="actionOxford_Seventh_edition_Science_words"/>
+     <addaction name="actionOxford_Seventh_edition_Business_and_finance_words"/>
+    </widget>
+    <addaction name="actionOxford_3000"/>
+    <addaction name="actionOxford_5000"/>
+    <addaction name="actionOxford_5000_excluding_Oxford_3000"/>
+    <addaction name="actionOxford_Phrasal_Academic_Lexicon"/>
+    <addaction name="actionOxford_Phrase_List"/>
+    <addaction name="separator"/>
+    <addaction name="menuOXford_Seventh_Edition_Specialist_lists"/>
+   </widget>
+   <widget class="QMenu" name="menuDictionary">
+    <property name="title">
+     <string>English-English Dictionary</string>
+    </property>
+    <addaction name="actionOxford_Advanced_Learner_s_Dictionary"/>
+    <addaction name="actionLongman_Dictionary"/>
+    <addaction name="actionCambridge_Dictionary"/>
+    <addaction name="actionMacmillan_Dictionary"/>
+    <addaction name="actionCollins_Dictionary"/>
+    <addaction name="actionMerriam_Webster_Dictionary"/>
+    <addaction name="separator"/>
+    <addaction name="actionLexico"/>
+    <addaction name="actionUrban_Dictionary"/>
+    <addaction name="separator"/>
+   </widget>
+   <widget class="QMenu" name="menuJapanese_Dictionary">
+    <property name="title">
+     <string>English-Japanese Dictionary</string>
+    </property>
+    <addaction name="actionWeblio"/>
+    <addaction name="actionEijirou"/>
+    <addaction name="actiongoo"/>
+   </widget>
    <addaction name="menuFile"/>
    <addaction name="menuOptions"/>
+   <addaction name="menuOxford"/>
+   <addaction name="menuDictionary"/>
+   <addaction name="menuJapanese_Dictionary"/>
    <addaction name="menuHelp"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
@@ -795,6 +1208,121 @@
   <action name="actionAbout">
    <property name="text">
     <string>About</string>
+   </property>
+  </action>
+  <action name="actionOxford_3000">
+   <property name="text">
+    <string>Oxford 3000</string>
+   </property>
+  </action>
+  <action name="actionOxford_5000">
+   <property name="text">
+    <string>Oxford 5000</string>
+   </property>
+  </action>
+  <action name="actionOxford_5000_excluding_Oxford_3000">
+   <property name="text">
+    <string>Oxford 5000 excluding Oxford 3000</string>
+   </property>
+  </action>
+  <action name="actionOxford_Phrasal_Academic_Lexicon">
+   <property name="text">
+    <string>Oxford Phrasal Academic Lexicon</string>
+   </property>
+  </action>
+  <action name="actionOxford_Phrase_List">
+   <property name="text">
+    <string>Oxford Phrase List</string>
+   </property>
+  </action>
+  <action name="actionLanguage_study_terms">
+   <property name="text">
+    <string>Language study terms</string>
+   </property>
+  </action>
+  <action name="actionArts_words">
+   <property name="text">
+    <string>Arts words</string>
+   </property>
+  </action>
+  <action name="actionOxford_Seventh_edition_Arts_words">
+   <property name="text">
+    <string>Oxford Seventh edition Arts words</string>
+   </property>
+  </action>
+  <action name="actionOxford_Learner_s_Dictionaries">
+   <property name="text">
+    <string>Oxford Learner's Dictionaries</string>
+   </property>
+  </action>
+  <action name="actionOxford_Advanced_Learner_s_Dictionary">
+   <property name="text">
+    <string>Oxford Advanced Learner's Dictionary</string>
+   </property>
+  </action>
+  <action name="actionLongman_Dictionary">
+   <property name="text">
+    <string>Longman Dictionary</string>
+   </property>
+  </action>
+  <action name="actionCambridge_Dictionary">
+   <property name="text">
+    <string>Cambridge Dictionary</string>
+   </property>
+  </action>
+  <action name="actionMacmillan_Dictionary">
+   <property name="text">
+    <string>Macmillan Dictionary</string>
+   </property>
+  </action>
+  <action name="actionCollins_Dictionary">
+   <property name="text">
+    <string>Collins Dictionary</string>
+   </property>
+  </action>
+  <action name="actionMerriam_Webster_Dictionary">
+   <property name="text">
+    <string>Merriam-Webster Dictionary</string>
+   </property>
+  </action>
+  <action name="actionLexico">
+   <property name="text">
+    <string>Lexico</string>
+   </property>
+  </action>
+  <action name="actionWeblio">
+   <property name="text">
+    <string>Weblio</string>
+   </property>
+  </action>
+  <action name="actionEijirou">
+   <property name="text">
+    <string>英辞郎</string>
+   </property>
+  </action>
+  <action name="actiongoo">
+   <property name="text">
+    <string>goo辞書</string>
+   </property>
+  </action>
+  <action name="actionUrban_Dictionary">
+   <property name="text">
+    <string>Urban Dictionary</string>
+   </property>
+  </action>
+  <action name="actionOxford_Seventh_edition_Science_words">
+   <property name="text">
+    <string>Oxford Seventh edition Science words</string>
+   </property>
+  </action>
+  <action name="actionOxford_Seventh_edition_Business_and_finance_words">
+   <property name="text">
+    <string>Oxford Seventh edition Business and finance words</string>
+   </property>
+  </action>
+  <action name="actionManual">
+   <property name="text">
+    <string>Manual</string>
    </property>
   </action>
  </widget>
