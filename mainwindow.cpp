@@ -710,6 +710,20 @@ void MainWindow::on_actionOxford_Seventh_edition_Business_and_finance_words_trig
     selectData();
 }
 
+void MainWindow::on_actionWordsmith_triggered()
+{
+    QString dictionary = "https://www.wordsmyth.net/?level=1&ent=";
+    if (ui->tabWidget->currentIndex() == 0)
+    {
+        url = dictionary + ui->English_word_lineEdit->text();
+
+    } else if (ui->tabWidget->currentIndex() ==2)
+    {
+        url = dictionary + ui->Oxford_word_lineEdit->text();
+    }
+    QDesktopServices::openUrl(QUrl(url));
+}
+
 void MainWindow::on_actionOxford_Advanced_Learner_s_Dictionary_triggered()
 {
     QString dictionary = "https://www.oxfordlearnersdictionaries.com/definition/english/";
@@ -1177,4 +1191,3 @@ void MainWindow::on_Oxford_part_of_speech_comboBox_currentIndexChanged(const QSt
         selectData();
     }
 }
-

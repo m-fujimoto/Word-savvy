@@ -36,7 +36,8 @@ private slots:
     void on_actionOxford_Phrase_List_triggered();
     void on_actionOxford_Seventh_edition_Arts_words_triggered();
     void on_actionOxford_Seventh_edition_Science_words_triggered();
-    void on_actionOxford_Seventh_edition_Business_and_finance_words_triggered();
+    void on_actionOxford_Seventh_edition_Business_and_finance_words_triggered(); 
+    void on_actionWordsmith_triggered();
     void on_actionOxford_Advanced_Learner_s_Dictionary_triggered();
     void on_actionLongman_Dictionary_triggered();
     void on_actionCambridge_Dictionary_triggered();

@@ -1339,6 +1339,8 @@
     <property name="title">
      <string>English-English Dictionary</string>
     </property>
+    <addaction name="actionWordsmith"/>
+    <addaction name="separator"/>
     <addaction name="actionOxford_Advanced_Learner_s_Dictionary"/>
     <addaction name="actionLongman_Dictionary"/>
     <addaction name="actionCambridge_Dictionary"/>
@@ -1507,6 +1509,11 @@
   <action name="actionAbout_Word_savvy">
    <property name="text">
     <string>About Word-savvy</string>
+   </property>
+  </action>
+  <action name="actionWordsmith">
+   <property name="text">
+    <string>Wordsmith</string>
    </property>
   </action>
  </widget>
