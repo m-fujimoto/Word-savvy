@@ -869,11 +869,11 @@ void MainWindow::on_actiongoo_triggered()
     QString dictionary = "https://dictionary.goo.ne.jp/srch/en/";
     if (ui->tabWidget->currentIndex() == 0)
     {
-        url = dictionary + ui->English_word_lineEdit->text();
+        url = dictionary + ui->English_word_lineEdit->text() + "/m0u/";
 
-    } else if (ui->tabWidget->currentIndex() ==2)
+    } else if (ui->tabWidget->currentIndex() == 2)
     {
-        url = dictionary + ui->Oxford_word_lineEdit->text();
+        url = dictionary + ui->Oxford_word_lineEdit->text()  + "/m0u/";
     }
     QDesktopServices::openUrl(QUrl(url));
 }
