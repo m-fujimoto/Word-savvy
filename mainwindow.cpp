@@ -876,7 +876,7 @@ void MainWindow::on_actionManual_triggered()
     ManualWindow->show();
 }
 
-void MainWindow::on_actionAbout_triggered()
+void MainWindow::on_actionAbout_Word_savvy_triggered()
 {
     QMessageBox msgBox;
     msgBox.about(this,tr("About Word-savvy"),tr("<h3>Word-savvy 1.2.0</h3>"
@@ -1177,3 +1177,4 @@ void MainWindow::on_Oxford_part_of_speech_comboBox_currentIndexChanged(const QSt
         selectData();
     }
 }
+
