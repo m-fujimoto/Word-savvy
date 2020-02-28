@@ -68,7 +68,8 @@ private slots:
     void on_search_English_keyword_by_pronunciation_pushButton_clicked();
     void on_search_English_keyword_by_memo_pushButton_clicked();
     void on_English_review_pushButton_clicked();
-    void on_English_tableWidget_cellDoubleClicked(int row);
+    void on_English_tableWidget_cellClicked(int row, int column);
+    void on_English_tableWidget_cellDoubleClicked(int row, int column);
 
     // Japanese
 
@@ -81,7 +82,8 @@ private slots:
     void on_search_Japanese_keyword_by_pronunciation_pushButton_clicked();
     void on_search_Japanese_keyword_by_memo_pushButton_clicked();
     void on_Japanese_review_pushButton_clicked();
-    void on_Japanese_tableWidget_cellDoubleClicked(int row);
+    void on_Japanese_tableWidget_cellClicked(int row, int column);
+    void on_Japanese_tableWidget_cellDoubleClicked(int row, int column);
 
     // Oxford
 
@@ -92,8 +94,13 @@ private slots:
     void on_search_Oxford_keyword_by_pronunciation_pushButton_clicked();
     void on_search_Oxford_keyword_by_memo_pushButton_clicked();
     void on_Oxford_review_pushButton_clicked();
-    void on_Oxford_tableWidget_cellDoubleClicked(int row);
+    void on_Oxford_tableWidget_cellClicked(int row, int column);
+    void on_Oxford_tableWidget_cellDoubleClicked(int row, int column);
     void on_Oxford_part_of_speech_comboBox_currentIndexChanged(const QString &arg1);
+
+    void on_actionJapanese_language_Dictionary_triggered();
+
+    void on_actionmojinavi_triggered();
 
 private:
     Ui::MainWindow *ui;
@@ -126,6 +133,7 @@ private:
     QSqlError setData();
     QSqlError searchData();
     QSqlError csvData();
+    QSqlError updateStarData();
 
     void clear_English_form();
     void clear_Japanese_form();

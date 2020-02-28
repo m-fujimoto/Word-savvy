@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1309</width>
-    <height>630</height>
+    <height>644</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -40,7 +40,7 @@
        <bool>false</bool>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>2</number>
       </property>
       <property name="tabsClosable">
        <bool>false</bool>
@@ -368,7 +368,7 @@
                </sizepolicy>
               </property>
               <property name="text">
-               <string>Tick this box to edit or delete a data</string>
+               <string> Edit / Delete</string>
               </property>
              </widget>
             </item>
@@ -788,7 +788,7 @@
                </sizepolicy>
               </property>
               <property name="text">
-               <string>Tick this box to edit or delete a data</string>
+               <string> Edit / Delete</string>
               </property>
              </widget>
             </item>
@@ -1177,7 +1177,7 @@
                </sizepolicy>
               </property>
               <property name="text">
-               <string>Tick this box to edit or delete a data</string>
+               <string> Edit / Delete </string>
               </property>
              </widget>
             </item>
@@ -1285,7 +1285,7 @@
      <x>0</x>
      <y>0</y>
      <width>1309</width>
-     <height>22</height>
+     <height>20</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">
@@ -1360,11 +1360,20 @@
     <addaction name="actionEijirou"/>
     <addaction name="actiongoo"/>
    </widget>
+   <widget class="QMenu" name="menuJapanese">
+    <property name="title">
+     <string>Japanese</string>
+    </property>
+    <addaction name="actionJapanese_language_Dictionary"/>
+    <addaction name="separator"/>
+    <addaction name="actionmojinavi"/>
+   </widget>
    <addaction name="menuFile"/>
    <addaction name="menuOptions"/>
    <addaction name="menuOxford"/>
    <addaction name="menuDictionary"/>
    <addaction name="menuJapanese_Dictionary"/>
+   <addaction name="menuJapanese"/>
    <addaction name="menuHelp"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
@@ -1514,6 +1523,16 @@
   <action name="actionWordsmith">
    <property name="text">
     <string>Wordsmith</string>
+   </property>
+  </action>
+  <action name="actionJapanese_language_Dictionary">
+   <property name="text">
+    <string>goo国語辞書</string>
+   </property>
+  </action>
+  <action name="actionmojinavi">
+   <property name="text">
+    <string>mojinavi</string>
    </property>
   </action>
  </widget>

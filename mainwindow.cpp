@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+﻿#include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "manual.h"
 #include "language_study_terms.h"
@@ -50,7 +50,7 @@ QSqlError MainWindow::selectData()
         ui->English_edit_pushButton->setDisabled(true);
         ui->English_delete_pushButton->setDisabled(true);
         ui->English_number_lineEdit->setText("1");
-        ui->English_checkBox->setDisabled(true);
+        ui->English_checkBox->setDisabled(false);
     } else if (ui->tabWidget->currentIndex() == 1)
     {
         tableName = "Japanese";
@@ -58,7 +58,7 @@ QSqlError MainWindow::selectData()
         ui->Japanese_add_pushButton->setDisabled(false);
         ui->Japanese_edit_pushButton->setDisabled(true);
         ui->Japanese_delete_pushButton->setDisabled(true);
-        ui->Japanese_checkBox->setDisabled(true);
+        ui->Japanese_checkBox->setDisabled(false);
     } else if (ui->tabWidget->currentIndex() == 2)
     {
         tableName = ui->tabWidget->tabText(2);
@@ -315,6 +315,40 @@ QSqlError MainWindow::updateData()
     }
     return QSqlError();
 }
+QSqlError MainWindow::updateStarData()
+{
+    QDate today = QDate::currentDate();
+    date = today.toString();
+    bool flag = true;
+
+    if (flag)
+    {
+        QSqlQuery query;
+        query.prepare("UPDATE '" + tableName + "' SET NUMBER = ?, WORD = ?, PRONUNCIATION = ?, PART_OF_SPEECH = ?, MEANING = ?, STAR = ?, DATE = ?, MEMO = ? WHERE NUMBER = ?");
+
+        query.bindValue(0, number);
+        query.bindValue(1, word);
+        query.bindValue(2, pronunciation);
+        query.bindValue(3, part_of_speech);
+        query.bindValue(4, meaning);
+        query.bindValue(5, star);
+        query.bindValue(6, date);
+        query.bindValue(7, memo);
+        query.bindValue(8, number);
+
+        if (query.exec())
+        {
+            QMessageBox msgBox;
+            msgBox.setText("The STAR was successfully updated.");
+            msgBox.exec();
+        } else {
+            QMessageBox msgBox;
+            msgBox.setText("The STAR was NOT updated.");
+            msgBox.exec();
+        }
+    }
+    return QSqlError();
+}
 
 QSqlError MainWindow::deleteData()
 {
@@ -445,9 +479,9 @@ QSqlError MainWindow::searchData()
             keyword = ui->Oxford_star_comboBox->currentText();
         } else if (choice == "CEFR")
         {
-
+//            keyword = ui->Oxford_part_of_speech_comboBox->currentText();
         } else {
-           keyword = ui->Oxford_keyword_lineEdit->text();
+            keyword = ui->Oxford_keyword_lineEdit->text();
         }
     }
 
@@ -878,6 +912,26 @@ void MainWindow::on_actiongoo_triggered()
     QDesktopServices::openUrl(QUrl(url));
 }
 
+void MainWindow::on_actionJapanese_language_Dictionary_triggered()
+{
+    QString dictionary = "https://dictionary.goo.ne.jp/srch/jn/";
+    if (ui->tabWidget->currentIndex() == 1)
+    {
+        url = dictionary + ui->Japanese_word_lineEdit->text() + "/m0u/";
+    }
+    QDesktopServices::openUrl(QUrl(url));
+}
+
+void MainWindow::on_actionmojinavi_triggered()
+{
+    QString dictionary = "https://mojinavi.com/?s=";
+    if (ui->tabWidget->currentIndex() == 1)
+    {
+        url = dictionary + ui->Japanese_word_lineEdit->text();
+    }
+    QDesktopServices::openUrl(QUrl(url));
+}
+
 void MainWindow::on_actionLanguage_study_terms_triggered()
 {
     Language_study_terms *Language_study_termsWindow = new Language_study_terms;
@@ -893,7 +947,7 @@ void MainWindow::on_actionManual_triggered()
 void MainWindow::on_actionAbout_Word_savvy_triggered()
 {
     QMessageBox msgBox;
-    msgBox.about(this,tr("About Word-savvy"),tr("<h3>Word-savvy 1.2.0</h3>"
+    msgBox.about(this,tr("About Word-savvy"),tr("<h3>Word-savvy 1.3.0</h3>"
                                              "<p>Copyright (C) 2019,2020 Word-savvy Team</p>"));
 }
 
@@ -903,7 +957,6 @@ void MainWindow::on_tabWidget_currentChanged()
 {
         selectData();
 }
-
 
 // Compobox
 
@@ -984,24 +1037,28 @@ void MainWindow::on_search_English_keyword_by_word_pushButton_clicked()
 {
     choice = "WORD";
     searchData();
+    clear_English_form();
 }
 
 void MainWindow::on_search_English_keyword_by_pronunciation_pushButton_clicked()
 {
     choice = "PRONUNCIATION";
     searchData();
+    clear_English_form();
 }
 
 void MainWindow::on_search_English_keyword_by_memo_pushButton_clicked()
 {
     choice = "MEMO";
     searchData();
+    clear_English_form();
 }
 
 void MainWindow::on_English_review_pushButton_clicked()
 {
     choice = "STAR";
     searchData();
+    clear_English_form();
 }
 
 void MainWindow::clear_English_form()
@@ -1016,10 +1073,51 @@ void MainWindow::clear_English_form()
     ui->English_keyword_lineEdit->setText("");
 }
 
-void MainWindow::on_English_tableWidget_cellDoubleClicked(int row)
+void MainWindow::on_English_tableWidget_cellClicked(int row, int column)
 {
-    number = ui->English_tableWidget->item(row,0)->text().toInt();
-    setData();
+    if ((ui->English_checkBox->isChecked()) && (column == 5))
+    {
+        number = ui->English_tableWidget->item(row,0)->text().toUInt();
+        word = ui->English_tableWidget->item(row,1)->text();
+        pronunciation = ui->English_tableWidget->item(row,2)->text();
+        part_of_speech = ui->English_tableWidget->item(row,3)->text();
+        meaning = ui->English_tableWidget->item(row,4)->text();
+        star = ui->English_tableWidget->item(row,5)->text();
+        date = ui->English_tableWidget->item(row,6)->text();
+        memo = ui->English_tableWidget->item(row,7)->text();
+
+        if (star == "☆☆☆☆☆")
+        {
+            star = "★☆☆☆☆";
+        } else if (star == "★☆☆☆☆")
+        {
+             star = "★★☆☆☆";
+        } else if (star == "★★☆☆☆")
+        {
+             star = "★★★☆☆";
+        } else if (star == "★★★☆☆")
+        {
+             star = "★★★★☆";
+        } else if (star == "★★★★☆")
+        {
+             star = "★★★★★";
+        } else if (star == "★★★★★")
+        {
+             star = "☆☆☆☆☆";
+        }
+        updateStarData();
+        selectData();
+        clear_English_form();
+    }
+}
+
+void MainWindow::on_English_tableWidget_cellDoubleClicked(int row,int column)
+{
+    if (column == 1)
+    {
+        number = ui->English_tableWidget->item(row,0)->text().toInt();
+        setData();
+    }
 }
 
 // Japanese
@@ -1074,24 +1172,28 @@ void MainWindow::on_search_Japanese_keyword_by_word_pushButton_clicked()
 {
     choice = "WORD";
     searchData();
+    clear_Japanese_form();
 }
 
 void MainWindow::on_search_Japanese_keyword_by_pronunciation_pushButton_clicked()
 {
     choice = "PRONUNCIATION";
     searchData();
+    clear_Japanese_form();
 }
 
 void MainWindow::on_search_Japanese_keyword_by_memo_pushButton_clicked()
 {
     choice = "MEMO";
     searchData();
+    clear_Japanese_form();
 }
 
 void MainWindow::on_Japanese_review_pushButton_clicked()
 {
     choice = "STAR";
     searchData();
+    clear_Japanese_form();
 }
 
 void MainWindow::clear_Japanese_form()
@@ -1105,10 +1207,51 @@ void MainWindow::clear_Japanese_form()
     ui->Japanese_checkBox->setChecked(false);
 }
 
-void MainWindow::on_Japanese_tableWidget_cellDoubleClicked(int row)
+void MainWindow::on_Japanese_tableWidget_cellClicked(int row, int column)
 {
-    number = ui->Japanese_tableWidget->item(row,0)->text().toInt();
-    setData();
+    if ((ui->Japanese_checkBox->isChecked()) && (column == 5))
+    {
+        number = ui->Japanese_tableWidget->item(row,0)->text().toUInt();
+        word = ui->Japanese_tableWidget->item(row,1)->text();
+        pronunciation = ui->Japanese_tableWidget->item(row,2)->text();
+        part_of_speech = ui->Japanese_tableWidget->item(row,3)->text();
+        meaning = ui->Japanese_tableWidget->item(row,4)->text();
+        star = ui->Japanese_tableWidget->item(row,5)->text();
+        date = ui->Japanese_tableWidget->item(row,6)->text();
+        memo = ui->Japanese_tableWidget->item(row,7)->text();
+
+        if (star == "☆☆☆☆☆")
+        {
+            star = "★☆☆☆☆";
+        } else if (star == "★☆☆☆☆")
+        {
+             star = "★★☆☆☆";
+        } else if (star == "★★☆☆☆")
+        {
+             star = "★★★☆☆";
+        } else if (star == "★★★☆☆")
+        {
+             star = "★★★★☆";
+        } else if (star == "★★★★☆")
+        {
+             star = "★★★★★";
+        } else if (star == "★★★★★")
+        {
+             star = "☆☆☆☆☆";
+        }
+        updateStarData();
+        selectData();
+        clear_Japanese_form();
+    }
+}
+
+void MainWindow::on_Japanese_tableWidget_cellDoubleClicked(int row, int column)
+{
+    if (column == 1)
+    {
+        number = ui->Japanese_tableWidget->item(row,0)->text().toInt();
+        setData();
+    }
 }
 
 // Oxford
@@ -1142,23 +1285,27 @@ void MainWindow::on_search_Oxford_keyword_by_word_pushButton_clicked()
 {
     choice = "WORD";
     searchData();
+    clear_Oxford_form();
 }
 
 void MainWindow::on_search_Oxford_keyword_by_pronunciation_pushButton_clicked()
 {
     choice = "PRONUNCIATION";
     searchData();
+    clear_Oxford_form();
 }
 
 void MainWindow::on_search_Oxford_keyword_by_memo_pushButton_clicked()
 {
     choice = "MEMO";
     searchData();
+    clear_Oxford_form();
 }
 void MainWindow::on_Oxford_review_pushButton_clicked()
 {
     choice = "STAR";
     searchData();
+    clear_Oxford_form();
 }
 
 void MainWindow::clear_Oxford_form()
@@ -1172,10 +1319,51 @@ void MainWindow::clear_Oxford_form()
     ui->Oxford_checkBox->setChecked(false);
 }
 
-void MainWindow::on_Oxford_tableWidget_cellDoubleClicked(int row)
+void MainWindow::on_Oxford_tableWidget_cellClicked(int row, int column)
 {
-    number = ui->Oxford_tableWidget->item(row,0)->text().toInt();
-    setData();
+    if ((ui->Oxford_checkBox->isChecked()) && (column == 5))
+    {
+        number = ui->Oxford_tableWidget->item(row,0)->text().toUInt();
+        word = ui->Oxford_tableWidget->item(row,1)->text();
+        pronunciation = ui->Oxford_tableWidget->item(row,2)->text();
+        part_of_speech = ui->Oxford_tableWidget->item(row,3)->text();
+        meaning = ui->Oxford_tableWidget->item(row,4)->text();
+        star = ui->Oxford_tableWidget->item(row,5)->text();
+        date = ui->Oxford_tableWidget->item(row,6)->text();
+        memo = ui->Oxford_tableWidget->item(row,7)->text();
+
+        if (star == "☆☆☆☆☆")
+        {
+            star = "★☆☆☆☆";
+        } else if (star == "★☆☆☆☆")
+        {
+             star = "★★☆☆☆";
+        } else if (star == "★★☆☆☆")
+        {
+             star = "★★★☆☆";
+        } else if (star == "★★★☆☆")
+        {
+             star = "★★★★☆";
+        } else if (star == "★★★★☆")
+        {
+             star = "★★★★★";
+        } else if (star == "★★★★★")
+        {
+             star = "☆☆☆☆☆";
+        }
+        updateStarData();
+        selectData();
+        clear_Oxford_form();
+    }
+}
+
+void MainWindow::on_Oxford_tableWidget_cellDoubleClicked(int row, int column)
+{
+    if (column == 1)
+    {
+        number = ui->Oxford_tableWidget->item(row,0)->text().toInt();
+        setData();
+    }
 }
 
 void MainWindow::on_Oxford_part_of_speech_comboBox_currentIndexChanged(const QString &arg1)
@@ -1191,3 +1379,8 @@ void MainWindow::on_Oxford_part_of_speech_comboBox_currentIndexChanged(const QSt
         selectData();
     }
 }
+
+
+
+
+
