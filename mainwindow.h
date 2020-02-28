@@ -39,6 +39,7 @@ private slots:
     void on_actionOxford_Seventh_edition_Business_and_finance_words_triggered(); 
     void on_actionWordsmith_triggered();
     void on_actionOxford_Advanced_Learner_s_Dictionary_triggered();
+    void on_actionOxford_Advanced_American_Dictionary_triggered();
     void on_actionLongman_Dictionary_triggered();
     void on_actionCambridge_Dictionary_triggered();
     void on_actionMacmillan_Dictionary_triggered();
@@ -46,9 +47,12 @@ private slots:
     void on_actionMerriam_Webster_Dictionary_triggered();
     void on_actionLexico_triggered();
     void on_actionUrban_Dictionary_triggered();
+    void on_actionLongman_Japanese_English_Dictionary_triggered();
     void on_actionWeblio_triggered();
     void on_actionEijirou_triggered();
     void on_actiongoo_triggered();
+    void on_actionJapanese_language_Dictionary_triggered();
+    void on_actionmojinavi_triggered();
     void on_actionLanguage_study_terms_triggered();
     void on_actionManual_triggered();
     void on_actionAbout_Word_savvy_triggered();
@@ -97,10 +101,6 @@ private slots:
     void on_Oxford_tableWidget_cellClicked(int row, int column);
     void on_Oxford_tableWidget_cellDoubleClicked(int row, int column);
     void on_Oxford_part_of_speech_comboBox_currentIndexChanged(const QString &arg1);
-
-    void on_actionJapanese_language_Dictionary_triggered();
-
-    void on_actionmojinavi_triggered();
 
 private:
     Ui::MainWindow *ui;

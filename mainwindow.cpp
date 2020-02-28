@@ -93,7 +93,6 @@ QSqlError MainWindow::selectData()
             ui->Oxford_part_of_speech_comboBox->setDisabled(true);
             ui->Oxford_part_of_speech_comboBox->clear();
         }
-
     }
 
     QSqlQuery query;
@@ -772,6 +771,20 @@ void MainWindow::on_actionOxford_Advanced_Learner_s_Dictionary_triggered()
     QDesktopServices::openUrl(QUrl(url));
 }
 
+void MainWindow::on_actionOxford_Advanced_American_Dictionary_triggered()
+{
+    QString dictionary = "https://www.oxfordlearnersdictionaries.com/definition/american_english/";
+    if (ui->tabWidget->currentIndex() == 0)
+    {
+        url = dictionary + ui->English_word_lineEdit->text();
+
+    } else if (ui->tabWidget->currentIndex() ==2)
+    {
+        url = dictionary + ui->Oxford_word_lineEdit->text();
+    }
+    QDesktopServices::openUrl(QUrl(url));
+}
+
 void MainWindow::on_actionLongman_Dictionary_triggered()
 {
     QString dictionary = "https://www.ldoceonline.com/dictionary/";
@@ -859,6 +872,20 @@ void MainWindow::on_actionLexico_triggered()
 void MainWindow::on_actionUrban_Dictionary_triggered()
 {
     QString dictionary = "https://www.urbandictionary.com/define.php?term=";
+    if (ui->tabWidget->currentIndex() == 0)
+    {
+        url = dictionary + ui->English_word_lineEdit->text();
+
+    } else if (ui->tabWidget->currentIndex() ==2)
+    {
+        url = dictionary + ui->Oxford_word_lineEdit->text();
+    }
+    QDesktopServices::openUrl(QUrl(url));
+}
+
+void MainWindow::on_actionLongman_Japanese_English_Dictionary_triggered()
+{
+    QString dictionary = "https://www.ldoceonline.com/jp/dictionary/english-japanese/";
     if (ui->tabWidget->currentIndex() == 0)
     {
         url = dictionary + ui->English_word_lineEdit->text();
@@ -1379,8 +1406,3 @@ void MainWindow::on_Oxford_part_of_speech_comboBox_currentIndexChanged(const QSt
         selectData();
     }
 }
-
-
-
-
-

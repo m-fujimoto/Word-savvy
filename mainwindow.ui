@@ -1342,6 +1342,7 @@
     <addaction name="actionWordsmith"/>
     <addaction name="separator"/>
     <addaction name="actionOxford_Advanced_Learner_s_Dictionary"/>
+    <addaction name="actionOxford_Advanced_American_Dictionary"/>
     <addaction name="actionLongman_Dictionary"/>
     <addaction name="actionCambridge_Dictionary"/>
     <addaction name="actionMacmillan_Dictionary"/>
@@ -1356,6 +1357,7 @@
     <property name="title">
      <string>English-Japanese Dictionary</string>
     </property>
+    <addaction name="actionLongman_Japanese_English_Dictionary"/>
     <addaction name="actionWeblio"/>
     <addaction name="actionEijirou"/>
     <addaction name="actiongoo"/>
@@ -1533,6 +1535,16 @@
   <action name="actionmojinavi">
    <property name="text">
     <string>mojinavi</string>
+   </property>
+  </action>
+  <action name="actionOxford_Advanced_American_Dictionary">
+   <property name="text">
+    <string>Oxford Advanced American Dictionary</string>
+   </property>
+  </action>
+  <action name="actionLongman_Japanese_English_Dictionary">
+   <property name="text">
+    <string>Longman Dictionary</string>
    </property>
   </action>
  </widget>
