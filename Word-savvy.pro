@@ -25,18 +25,15 @@ DEFINES += QT_DEPRECATED_WARNINGS
 CONFIG += c++11
 
 SOURCES += \
-        language_study_terms.cpp \
         main.cpp \
         mainwindow.cpp \
         manual.cpp
 
 HEADERS += \
-        language_study_terms.h \
         mainwindow.h \
         manual.h
 
 FORMS += \
-        language_study_terms.ui \
         mainwindow.ui \
         manual.ui
 
