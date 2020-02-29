@@ -1095,7 +1095,7 @@ void MainWindow::clear_English_form()
 
 void MainWindow::on_English_tableWidget_cellClicked(int row, int column)
 {
-    if ((ui->English_checkBox->isChecked()) && (column == 5))
+    if (column == 5)
     {
         number = ui->English_tableWidget->item(row,0)->text().toUInt();
         word = ui->English_tableWidget->item(row,1)->text();
@@ -1229,7 +1229,7 @@ void MainWindow::clear_Japanese_form()
 
 void MainWindow::on_Japanese_tableWidget_cellClicked(int row, int column)
 {
-    if ((ui->Japanese_checkBox->isChecked()) && (column == 5))
+    if (column == 5)
     {
         number = ui->Japanese_tableWidget->item(row,0)->text().toUInt();
         word = ui->Japanese_tableWidget->item(row,1)->text();
@@ -1341,7 +1341,7 @@ void MainWindow::clear_Oxford_form()
 
 void MainWindow::on_Oxford_tableWidget_cellClicked(int row, int column)
 {
-    if ((ui->Oxford_checkBox->isChecked()) && (column == 5))
+    if (column == 5)
     {
         number = ui->Oxford_tableWidget->item(row,0)->text().toUInt();
         word = ui->Oxford_tableWidget->item(row,1)->text();
