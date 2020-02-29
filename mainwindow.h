@@ -53,7 +53,6 @@ private slots:
     void on_actiongoo_triggered();
     void on_actionJapanese_language_Dictionary_triggered();
     void on_actionmojinavi_triggered();
-    void on_actionLanguage_study_terms_triggered();
     void on_actionManual_triggered();
     void on_actionAbout_Word_savvy_triggered();
 

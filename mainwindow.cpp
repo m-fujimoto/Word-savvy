@@ -1,7 +1,6 @@
 ﻿#include "mainwindow.h"
 #include "ui_mainwindow.h"
 #include "manual.h"
-#include "language_study_terms.h"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -957,12 +956,6 @@ void MainWindow::on_actionmojinavi_triggered()
         url = dictionary + ui->Japanese_word_lineEdit->text();
     }
     QDesktopServices::openUrl(QUrl(url));
-}
-
-void MainWindow::on_actionLanguage_study_terms_triggered()
-{
-    Language_study_terms *Language_study_termsWindow = new Language_study_terms;
-    Language_study_termsWindow->show();
 }
 
 void MainWindow::on_actionManual_triggered()

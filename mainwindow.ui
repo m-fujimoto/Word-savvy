@@ -1305,7 +1305,6 @@
     <property name="title">
      <string>Help</string>
     </property>
-    <addaction name="actionLanguage_study_terms"/>
     <addaction name="actionManual"/>
     <addaction name="actionAbout_Word_savvy"/>
    </widget>
