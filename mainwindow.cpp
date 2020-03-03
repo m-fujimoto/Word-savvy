@@ -95,7 +95,7 @@ QSqlError MainWindow::selectData()
     }
 
     QSqlQuery query;
-    query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH,MEANING, STAR, DATE, MEMO FROM '" + tableName + "' ORDER BY NUMBER DESC");
+    query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' ORDER BY NUMBER DESC");
 
     int i = {0};
 
@@ -215,7 +215,7 @@ QSqlError MainWindow::insertData()
         if (tablequery.exec("CREATE TABLE IF NOT EXISTS '" + tableName + "'"" (NUMBER INTEGER, WORD TEXT, PRONUNCIATION TEXT, PART_OF_SPEECH TEXT, MEANING TEXT, STAR TEXT, DATE TEXT, MEMO TEXT)"))    {
 
         QSqlQuery query;
-        query.prepare("INSERT INTO '" + tableName + "'"" (NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH ,MEANING, STAR, DATE, MEMO) "
+        query.prepare("INSERT INTO '" + tableName + "'"" (NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH , MEANING, STAR, DATE, MEMO) "
                                                  "VALUES (:number, :word, :pronunciation, :part_of_speech, :meaning, :star, :date, :memo)");
         query.bindValue(0, number);
         query.bindValue(1, word);
