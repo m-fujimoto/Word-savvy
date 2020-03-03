@@ -95,7 +95,7 @@ QSqlError MainWindow::selectData()
     }
 
     QSqlQuery query;
-    query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH,MEANING, STAR, DATE, MEMO FROM '" + tableName + "' ORDER BY NUMBER DESC");
+    query.prepare("SELECT NUMBER, WORD, PRONUNCIATION, PART_OF_SPEECH, MEANING, STAR, DATE, MEMO FROM '" + tableName + "' ORDER BY NUMBER DESC");
 
     int i = {0};
 
